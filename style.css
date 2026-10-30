@@ -1,8 +1,8 @@
-/**********SITE VR CREE PAR EKLEIPSI MEDIAS**********/
-/**********JONATHAN JOLY*****************************/
-/**********https://ekleipsi-medias.fr****************/
-/**********contact@ekleipsi-medias.fr****************/
-
+@font-face{font-family:Sora;font-weight:800;src:url('assets/fonts/sora-latin-800-normal.woff2') format('woff2')}
+@font-face{font-family:Manrope;font-weight:500;src:url('assets/fonts/manrope-latin-500-normal.woff2') format('woff2')}
+@font-face{font-family:Manrope;font-weight:700;src:url('assets/fonts/manrope-latin-700-normal.woff2') format('woff2')}
+/**********RENASKIA VR**********/
+/* Palette : #070D2E #0F2468 #1D3FA8 (fonds), #C4B5FD (accent), #E63946 (barre rouge), #F5F7FA (texte) */
 
 /**********général**********/
 * {
@@ -12,13 +12,23 @@
 body { 
     box-sizing: border-box;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Manrope, Verdana, sans-serif;
+    color:#F5F7FA;
+    background:#070D2E;
 }
 h1 { 
-    margin: 1em auto;
+    margin: 1em auto .3em;
+    font-family:Sora, Manrope, sans-serif;
+    font-weight:800;
+    letter-spacing:-.02em;
 }
+.accent{ color:#C4B5FD; }
+.tagline{ text-align:center; color:#B4C4F2; margin-bottom:1.6em; }
 h2 {
     margin: 1em auto 2em auto;
+    font-family:Sora, Manrope, sans-serif;
+    font-weight:800;
+    color:#C4B5FD;
 }
 p {
     text-align: justify;
@@ -27,14 +37,14 @@ p {
     margin: auto;
 }
 img { 
-    box-shadow: 0px 0px 10px 5px black;
+    box-shadow: 0px 0px 24px 4px rgba(255,122,40,.35);
     border-radius: 10px;
 }
 /**********page index**********/
 .logo {
     margin-top: 1em;
     width: 401px;
-    height: 164px;
+    height: 163px;
     margin: 1em auto;
 }
 .content {
@@ -47,7 +57,8 @@ img {
 }
 
 .aside{
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(7,13,46,0.78);
+    border: 2px solid #3355C4;
     width: 80%;
     margin: 2rem auto;
     padding: 30px;
@@ -73,24 +84,30 @@ img {
 }
 .lancement {
     height: 75px;
-    background-color: white;
-    border-radius: 5px;
+    background-color: #D62828;
+    border-radius: 14px;
+    font-family:Sora, Manrope, sans-serif;
+    font-weight:800;
     font-size: 1.5rem;
     line-height:75px;
     text-decoration: none;
-    color:black;
+    color:#fff;
     margin: 3em auto;    
     padding: 15px ;
 }
 .lancement:hover {
-    background-color: aqua;
-    box-shadow: 0px 0px 20px aqua;
+    background-color: #E63946;
+    box-shadow: 0px 0px 24px rgba(230,57,70,.7);
 }
+.lancement-2{ background-color:#1D4ED8; }
+.lancement-2:hover{ background-color:#2563EB; box-shadow:0px 0px 24px rgba(37,99,235,.7); }
 
 .footer {
     height: 75px;
-    background-color:aqua;
+    background-color:#0F2468;
+    border-top:3px solid #E63946;
 }
+.footer a{ color:#C4B5FD; }
 .footer span { line-height: 75px; }
 /**********PAGE DES MENTIONS LEGALES**********/
 .mentions {
@@ -106,3 +123,5 @@ img {
 }
 
 
+
+.aside a{ color:#C4B5FD; }

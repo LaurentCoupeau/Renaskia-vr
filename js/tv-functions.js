@@ -1,4 +1,4 @@
-// TV GLORYDEV
+// TV RENASKIA
 AFRAME.registerComponent('play-pause', {
 	init: function () {
     let buttonTv = document.querySelector('#buttonTv');
@@ -10,6 +10,7 @@ AFRAME.registerComponent('play-pause', {
         buttonTv.setAttribute('material', 'src', 'assets/icones/pause.png');     
         pub.volume='0.4';   
         pub.play();
+        document.getElementById('idle1').setAttribute('visible', false);
         stateTv = true;
       } else {        
         let curent = pub.currentTime;
@@ -26,21 +27,22 @@ AFRAME.registerComponent('play-pause', {
 AFRAME.registerComponent('play-room', {
 	init: function () {
     let buttonTvRoom = document.querySelector('#buttonTvRoom');
-    let pubGlory = document.getElementById('video2');
+    let pubRenaskia = document.getElementById('video2');
     let stateTv = false;
     buttonTvRoom.setAttribute('material', 'src', 'assets/icones/play.png');
 
     buttonTvRoom.addEventListener('click', function() {
       if (stateTv == false){
         buttonTvRoom.setAttribute('material', 'src', 'assets/icones/pause.png');      
-        pubGlory.volume='0.4';  
-        pubGlory.play();
+        pubRenaskia.volume='0.4';  
+        pubRenaskia.play();
+        document.getElementById('idle2').setAttribute('visible', false);
         stateTv = true;
       } else {        
-        let curent = pubGlory.currentTime;
+        let curent = pubRenaskia.currentTime;
         buttonTvRoom.setAttribute('material', 'src', 'assets/icones/play.png');
-        pubGlory.currentTime=curent;
-        pubGlory.pause();
+        pubRenaskia.currentTime=curent;
+        pubRenaskia.pause();
         stateTv = false;
       } 
     });
