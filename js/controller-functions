@@ -1,0 +1,35 @@
+// fonction panneau d'affichage sous controller gauche
+
+let leftHand = document.querySelector('#left-hand');
+let plan = document.createElement('a-plane');
+let textValue = "hello !!!";
+let text = document.createElement('a-text');
+text.setAttribute('value', textValue);
+
+plan.setAttribute('geometry', {
+  width:0.1,
+  height:0.15
+})
+plan.setAttribute('position', {
+  x:0.1,
+  y:-0.05,
+  z:0
+})
+plan.setAttribute('rotation', {
+  x:45,
+  y:0,
+  z:0
+})
+
+text.setAttribute('width', 0.5);
+text.setAttribute('anchor', 'left')
+
+text.setAttribute('position', {
+  x:-0.05,
+  y:0.05,
+  z:0
+})
+plan.setAttribute('material','color', 'black');
+plan.append(text)
+
+leftHand.append(plan)

@@ -1,0 +1,1882 @@
+<html lang="fr">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index, follow" />
+
+        <title>RENASKIA VR</title>
+
+        <meta name="description" content="Bienvenue dans le monde virtuel de Renaskia : formation, audit de cybersécurité, plateforme e-learning, serious game." />
+        <meta name="keywords" content="Renaskia, formation, cybersécurité, audit, LMS, serious game, réalité virtuelle" />
+        <meta name="language" content="fr"/>
+        
+        <meta name="robots" content="noindex">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.0/dist/aframe-extras.min.js"></script>
+</head>
+<body>
+                       
+                <a-scene id="scene" renderer="antialias: true; colorManagement: true" fog="type: exponential; color: #3b2f7a; density: 0.0026" foo day quality>
+
+                <a-assets>
+                        <!-----------------------TITRE---------------------->
+                        <img id="titre" src="assets/img/visuels/renaskia/titre.png"></img>
+                        <!-----------------------CIEL---------------------->
+                        <img id="vue-ia" src="assets/img/futur/vue-ia.jpg"></img>
+                        <img id="ciel-futur" src="assets/img/sky-futur.jpg"></img>
+                        <img id="sol-futur" src="assets/img/futur/sol.jpg"></img>
+                        <img id="tour1" src="assets/img/futur/tour1.jpg"></img>
+                        <img id="tour2" src="assets/img/futur/tour2.jpg"></img>
+                        <img id="tour3" src="assets/img/futur/tour3.jpg"></img>
+                        <img id="plafond" src="assets/img/sky-renaskia.jpg"></img>
+                        <img id="place" src="assets/textures/place.jpg"></img>
+                        <img id="brique" src="assets/img/perpignan/brique.jpg"></img>
+                        <img id="castilletface" src="assets/img/perpignan/castillet-face.jpg"></img>
+                        <img id="ville1" src="assets/img/perpignan/ville1.jpg"></img>
+                        <img id="ville2" src="assets/img/perpignan/ville2.jpg"></img>
+                        <img id="ville3" src="assets/img/perpignan/ville3.jpg"></img>
+                        <img id="ville4" src="assets/img/perpignan/ville4.jpg"></img>
+                        <img id="toit" src="assets/img/perpignan/toit.jpg"></img>
+                        <img id="palmier" src="assets/img/perpignan/palmier.png"></img>
+                        <img id="enseigne" src="assets/logo.png"></img>
+                        <img id="tvidle1" src="assets/img/tv-idle1.jpg"></img>
+                        <img id="tvidle2" src="assets/img/tv-idle2.jpg"></img>
+                        <!-----------------------POSTERS---------------------->
+                        <img id="matrix" src="assets/img/poster/matrix.jpg"></img>
+                        <img id="xmen" src="assets/img/poster/x-men.jpg"></img>
+                        <img id="lodro" src="assets/img/poster/lodro.jpg"></img>
+                        <img id="star-wars" src="assets/img/poster/star-wars.jpg"></img>
+                        <img id="harry" src="assets/img/poster/harry-coupe-de-feu.jpg"></img>
+                        <img id="got" src="assets/img/poster/game-of-throne.jpg"></img>
+                        <img id="commandements" src="assets/img/poster/10commandements.png"></img>
+                        <img id="fullmetal" src="assets/img/poster/full-metal-alchemist.jpg"></img>
+                        <img id="poissons" src="assets/img/poster/poissons.jpg"></img>
+                        <!-----------------------RENASKIA---------------------->
+                        <img id="logorenaskia" src="assets/img/logo-renaskia.png"></img>
+                        <img id="superman" src="assets/img/visuels/renaskia/phoenix.png">
+                        <img id="groupe" src="assets/img/visuels/galerie/groupe.jpg">
+                        <img id="teknik" src="assets/img/visuels/galerie/teknik.jpg">
+                        <img id="afterwork" src="assets/img/visuels/galerie/afterwork.jpg">
+                        <img id="face" src="assets/img/visuels/galerie/face.jpg">
+                        <!-----------------------PNG PADS---------------------->
+                        <img id="svc-pentest" src="assets/img/services/pentest.jpg"></img>
+                        <img id="svc-audit" src="assets/img/services/audit.jpg"></img>
+                        <img id="svc-sensibilisation" src="assets/img/services/sensibilisation.jpg"></img>
+                        <img id="svc-formation" src="assets/img/services/formation.jpg"></img>
+                        <img id="svc-lms" src="assets/img/services/lms.jpg"></img>
+                        <img id="svc-serious" src="assets/img/services/serious.jpg"></img>
+                        <img id="svc-etiquette" src="assets/img/services/etiquette.png"></img>
+                        <img id="presentation" src="assets/img/pads/presentation.png"></img>
+                        <img id="engagements" src="assets/img/pads/engagements.png"></img>
+                        <img id="formations" src="assets/img/pads/formations.png"></img>
+                        <img id="prestations" src="assets/img/pads/prestations.png"></img>
+                        <img id="partenaires" src="assets/img/pads/partenaires.png"></img>
+                        <img id="infos" src="assets/img/pads/infos.png"></img>
+                        <!-----------------------VIDEO RENASKIA---------------------->
+                        <video id="video1" src="assets/video/renaskia-presentation.mp4" preload="auto" loop playsinline crossorigin="anonymous"></video>
+                        <video id="video2" src="assets/video/le-rdv-renaskia.mp4" preload="auto" loop playsinline crossorigin="anonymous"></video>
+                        <!-----------------------AUDIT CYBERSÉCURITÉ---------------------->
+                        <img id="logo-art" src="assets/img/visuels/audit/logo.png">
+                        <img id="art1" src="assets/img/visuels/audit/1.jpg">
+                        <img id="art2" src="assets/img/visuels/audit/2.jpg">
+                        <img id="art3" src="assets/img/visuels/audit/3.jpg">
+                        <img id="art4" src="assets/img/visuels/audit/4.jpg">
+                        <!-----------------------E-LEARNING (LMS, SERIOUS GAME)---------------------->
+                        <img id="logo-elearning" src="assets/img/visuels/elearning/logo.png">
+                        <img id="elearn1" src="assets/img/visuels/elearning/1.jpg">
+                        <img id="elearn2" src="assets/img/visuels/elearning/2.jpg">
+                        <img id="elearn3" src="assets/img/visuels/elearning/3.jpg">
+                        <img id="elearn4" src="assets/img/visuels/elearning/4.jpg">
+                        <!-----------------------FORMATION PROFESSIONNELLE---------------------->
+                        <img id="logo-dr" src="assets/img/visuels/formation/logo.png">
+                        <img id="dr1" src="assets/img/visuels/formation/1.jpg">
+                        <img id="dr2" src="assets/img/visuels/formation/2.jpg">
+                        <img id="dr3" src="assets/img/visuels/formation/3.jpg">
+                        <!-----------------------DM 66---------------------->
+                        <img id="logo-dm" src="assets/img/visuels/sensibilisation/logo.png">
+                        <img id="dm1" src="assets/img/visuels/sensibilisation/1.jpg">
+                        <img id="dm2" src="assets/img/visuels/sensibilisation/2.jpg">
+                        <img id="dm3" src="assets/img/visuels/sensibilisation/3.jpg">
+                        <!-----------------------PUB RENASKIA---------------------->                        
+                        <img id="pubRenaskia" src="assets/img/visuels/renaskia/pub-renaskia.png">
+                        <!-----------------------SUCRERIES---------------------->
+                        <img id="candys" src="assets/img/sugar/candys.png"></img>
+                        <img id="twix" src="assets/img/sugar/twix.png"></img>
+                        <img id="chocolates" src="assets/img/sugar/chocolates.png"></img>
+                        <!-----------------------CHANTIER---------------------->
+                        <img id="panneau" src="assets/img/chantier/signaux.png"></img>
+                        <img id="tirets" src="assets/img/chantier/tirets.png"></img>
+                        <!-----------------------HAND SAS---------------------->
+                        <img id="spokeHand" src="assets/img/sas/spoke-hand.png"></img>
+                        <img id="handRightSas" src="assets/img/sas/handRight.png"></img>
+                        <img id="sasWc" src="assets/img/sas/wc-sas.png"></img>
+                        <!-----------------------LIVRE---------------------->
+                        <img id="windows" src="assets/img/livres/windows.png"></img>
+                        <img id="bitcoin" src="assets/img/livres/bitcoin.png"></img>
+                        <img id="linux" src="assets/img/livres/linux.png"></img>
+                        <img id="html" src="assets/img/livres/html.png"></img>
+                        <img id="css" src="assets/img/livres/css.png"></img>
+                        <img id="bootstrap" src="assets/img/livres/bootstrap.png"></img>
+                        <img id="jquery" src="assets/img/livres/jquery.png"></img>
+                        <img id="vagrant" src="assets/img/livres/vagrant.png"></img>
+                        <img id="kubernetes" src="assets/img/livres/kubernetes.png"></img>
+                        <img id="docker" src="assets/img/livres/docker.png"></img>
+                        <img id="active" src="assets/img/livres/active.png"></img>
+                        <img id="symfony" src="assets/img/livres/symfony.png"></img>
+                        <img id="servers" src="assets/img/livres/servers.png"></img>
+                        <img id="seo" src="assets/img/livres/seo.png"></img>
+                        <img id="virtualisation" src="assets/img/livres/virtualisation.png"></img>
+                        <img id="reseaux" src="assets/img/livres/reseaux.png"></img>
+                        <img id="wordpress" src="assets/img/livres/wordpress.png"></img>
+                        <!-----------------------ASTRES---------------------->
+                        <img id="sun" src="assets/textures/sun.jpg"></img>                        
+                        <!-----------------------ICONES---------------------->
+                        <img id="vador" src="assets/icones/vador.png"></img>
+                        <!-----------------------TEXTURES---------------------->
+                        <img id="plaster" src="assets/textures/plaster-white.jpg"></img>
+                        <img id="marbre" src="assets/textures/marbre turquoise.jpg"></img>
+                        <img id="marbre-or" src="assets/textures/marbre-or.jpg"></img>
+                        <img id="bois" src="assets/textures/bois_crade.jpg"></img>
+                        <img id="acier" src="assets/textures/acier.jpg"></img>
+                        <img id="laiton" src="assets/textures/laiton.jpg"></img>
+                        <img id="tissu" src="assets/textures/turquoise.jpg"></img>
+                        <img id="matelas" src="assets/textures/matelas.jpg"></img>
+                        <img id="oreillet" src="assets/textures/coussin.jpg"></img>
+                        <!-----------------------SOCLE TELEPORTATION---------------------->
+                        <img id="footsteps" src="assets/icones/foot1.png"></img>
+                        <!-----------------------CIEL---------------------->
+                        <img id="black" src="assets/img/black.png"></img>
+                        <!-----------------------PLANTE--------------------->
+                        <a-asset-item id="plante-obj" src="assets/3d/rododendron.obj"></a-asset-item>
+                        <a-asset-item id="plante-mtl" src="assets/3d/rododendron.mtl"></a-asset-item>
+                        <!-----------------------RUBIK'S CUBE--------------------->
+                        <a-asset-item id="rubik-obj" src="assets/3d/RubikCube_obj/RubikCube.obj"></a-asset-item>
+                        <a-asset-item id="rubik-mtl" src="assets/3d/RubikCube_obj/RubikCube.mtl"></a-asset-item>
+                        <!-----------------------SONS--------------------->
+                        <!-----------------------AMBIANCE---------------------->
+                        <audio id="ambiant" src="assets/sounds/wild-heart.mp3"></audio>
+                        <!-----------------------TELEPORTATION---------------------->
+                        <audio id="teleport" src="assets/sounds/telep.mp3"></audio>
+                        <!-----------------------SAS---------------------->
+                        <audio id="sas-sound" src="assets/sounds/sas.mp3"></audio>
+                        <audio id="wc-sound" src="assets/sounds/wc.mp3"></audio>
+                        <!-----------------------STARWARS---------------------->
+                        <audio id="laser" src="assets/sounds/laser.mp3"></audio>
+                        <audio id="moteur" src="assets/sounds/moteur-vaisseau.mp3"></audio>
+                        <!-----------------------SABRE---------------------->
+                        <audio id="sabon" src="assets/sounds/saber-on.mp3"></audio>
+                        <audio id="saboff" src="assets/sounds/saber-off.mp3"></audio>
+                        <!-----------------------CLIC---------------------->
+                        <audio id="clic" src="assets/sounds/clic.mp3"></audio>
+                        <!-----------------------TIROIS---------------------->
+                        <audio id="tiroir-ouvert" src="assets/sounds/tiroir-ouvert.mp3"></audio>
+                        <audio id="tiroir-ferme" src="assets/sounds/tiroir-ferme.mp3"></audio>
+                </a-assets>
+                
+                <!---------------------CAMERA RIG-------------------->
+                <a-entity id="cam-rig">
+			
+			<a-camera id="cam" position="0 1.6 0" wasd-controls="enabled:false">
+                <a-cursor id="curseur" color="#000000"></a-cursor>
+			</a-camera>
+                        <!--------------------controlers-------------------->
+                        <a-entity>
+                                <a-entity super-hands laser-controls="hand: left" id="left-hand"
+                                          raycaster="objects: .clickable, .teleport; far: 10" >
+                                </a-entity>
+                                <a-entity super-hands laser-controls="hand: right" id="right-hand"
+                                          raycaster="objects: .clickable, .teleport; far: 10">
+                                </a-entity>
+                        </a-entity>
+			
+                </a-entity>
+
+                <!---------------------CIEL-------------------->
+                <a-sky id="ciel" src="#plafond" rotation="0 -90 0"></a-sky>
+                <!---------------------EXTERIEUR : PLACE, VILLE, ENSEIGNE-------------------->
+                <a-entity id="exterieur">
+                        <a-plane src="#place" repeat="300 300" width="1200" height="1200" rotation="-90 0 0" position="0 -0.06 0" shader="flat"></a-plane>
+                        <a-entity perpignan></a-entity>
+                </a-entity>
+                <a-entity id="exterieur-futur" futur>
+                </a-entity>   
+                
+                <!---------------------ASTRES-------------------->
+                <a-entity id="earth" position="0 0 0">
+                        <a-sphere position="0 -490 0" src="#sun" radius="15">
+                                <a-light type="spot" color="#FFFFFF" intensity="1.2" position="0 100 0" rotation="90 0 0" castShadow="true"></a-light>
+                                <a-light type="spot" color="#FFFFFF" intensity="0.7" position="0 100 0" rotation="-90 0 0"></a-light>
+                        </a-sphere>
+                </a-entity>
+                
+                <!---------------------LUMIERE PIECE PRINCIPALE----------------------->                        
+                <a-light type="ambient" color="#cfd8ff" intensity="0.22"></a-light>
+                <a-light type="hemisphere" color="#e6ebff" groundColor="#3a2a70" intensity="0.3"></a-light>
+                <!---------------------ECLAIRAGE INTERIEUR (dalles lumineuses + lumières ponctuelles)-------------------->
+                <a-entity id="eclairage">
+                        <a-box position="0 3.96 -2.8" width="2.4" height="0.04" depth="0.5" color="#ffffff" emissive="#fff7ea" emissive-intensity="1"></a-box>
+                        <a-box position="0 3.96 0" width="2.4" height="0.04" depth="0.5" color="#ffffff" emissive="#fff7ea" emissive-intensity="1"></a-box>
+                        <a-box position="0 3.96 2.8" width="2.4" height="0.04" depth="0.5" color="#ffffff" emissive="#fff7ea" emissive-intensity="1"></a-box>
+                        <a-light type="point" color="#fff1de" intensity="0.4" position="0 3.6 -2.8" distance="9" decay="1.5"></a-light>
+                        <a-light type="point" color="#fff1de" intensity="0.4" position="0 3.6 0" distance="9" decay="1.5"></a-light>
+                        <a-light type="point" color="#fff1de" intensity="0.4" position="0 3.6 2.8" distance="9" decay="1.5"></a-light>
+                        <a-light type="point" color="#c4b5fd" intensity="0.5" position="-7 2.3 0" distance="8" decay="1.5"></a-light>
+                        <a-light type="point" color="#ffd9b0" intensity="0.5" position="-13 2.2 0" distance="8" decay="1.5"></a-light>
+                </a-entity>
+
+                <!---------------------PIECE PRINCIPALE-------------------->
+                <a-entity id="first-room">
+                        <!---------------------MURS----------------------->
+                        <a-entity position="0 2 0">
+
+                                <!--------------------plafond-------------------->
+                                <a-entity position="0 2 0" rotation="90 0 0">
+                                        <!--------------------interieur-------------------->
+                                        <a-plane src="#plaster" repeat="8 9" 
+                                                width="8" height="9" side="double" roughness="0.85">
+                                        </a-plane>
+                                        <!--------------------extérieur-------------------->
+                                        <a-box src="#plaster" repeat="8 9" position="0 0 -0.06"
+                                                width="8" height="9" depth="0.1">
+                                        </a-box>
+                                </a-entity>
+                                <!--------------------sol-------------------->
+                                <a-plane src="#marbre-or" roughness="0.2" metalness="0.1" width="8" height="9" position="0 -2 0"
+                                        rotation="-90 0 0" repeat="8 9" roughness="0.85">
+                                </a-plane>
+                                <!--------------------mur de gauche-------------------->
+                                <a-entity position="-4 0 0" rotation="0 90 0">
+                                        <!--------------------horloge-------------------->
+                                        <a-entity position="0 1 0.07">
+                                                <a-cylinder height="0.1" radius="0.5" color="#0f1a4a" metalness="0.2" roughness="0.5" rotation="-90 0 0"></a-cylinder>
+                                                <a-torus radius="0.5" radius-tubular="0.025" color="#E63946" rotation="0 0 0" position="0 0 0.04" roughness="0.4"></a-torus>
+                                                <a-text id="heure" value="" position="-0.32 0 0.05"
+                                                        width="4" color="#ffffff" font="kelsonsans"></a-text>
+                                        </a-entity>   
+
+                                        <!--------------------partie gauche-------------------->
+                                        <a-entity position="-3 0 0">
+                                                <!--------------------interieur-------------------->
+                                                <a-plane src="#plaster" repeat="3 4" width="3" height="4" side="double" roughness="0.85">
+                                                </a-plane>
+                                                <!--------------------extérieur-------------------->
+                                                <a-box src="#plaster" repeat="2.5 4" position="-0.3 0 -0.06"
+                                                        width="2.4" height="4.1" depth="0.1">
+                                                </a-box>
+
+
+                                                <!--------------------plainte sol-------------------->
+                                                <a-box width="3" height="0.1" depth="0.05" src="#bois" repeat="4 1"
+                                                        position="0 -1.95 0" roughness="0.85">
+                                                </a-box>
+                                                <!--------------------plainte porte-------------------->
+                                                <a-box width="0.1" height="1.9" depth="0.05" src="#bois" repeat="1 2"
+                                                        position="1.45 -0.95 0" roughness="0.85">
+                                                </a-box>
+                                        </a-entity>
+
+                                        <!--------------------partie droite-------------------->
+                                        <a-entity position="3 0 0">
+                                                <!--------------------interieur-------------------->
+                                                <a-plane src="#plaster" repeat="3 4" width="3" height="4" side="double" roughness="0.85">
+                                                </a-plane>
+                                                <!--------------------extérieur-------------------->
+                                                <a-box src="#plaster" repeat="2.5 4" position="0.3 0 -0.06"
+                                                        width="2.4" height="4.1" depth="0.1">
+                                                </a-box>
+                                                <!--------------------plainte sol-------------------->
+                                                <a-box width="3" height="0.1" depth="0.05" src="#bois" repeat="4 1"
+                                                        position="0 -1.95 0" roughness="0.85">
+                                                </a-box>
+                                                <!--------------------plainte porte-------------------->
+                                                <a-box width="0.1" height="1.9" depth="0.05" src="#bois" repeat="1 2"
+                                                        position="-1.45 -0.95 0" roughness="0.85">
+                                                </a-box>
+                                        </a-entity>
+
+                                        <!--------------------dessus de porte-------------------->
+
+                                        <!--------------------intérieur-------------------->
+                                        <a-plane position="0 1 0" src="#plaster" repeat="3 2" width="3" height="2"
+                                                side="double" roughness="0.85">
+                                        </a-plane>
+                                        <!--------------------extérieur-------------------->
+                                        <a-box src="#plaster" repeat="4 2" position="0 1.1 -0.06"
+                                                width="4.2" height="1.9" depth="0.1">
+                                        </a-box>
+
+                                        <!--------------------plainte porte-------------------->
+                                        <a-box width="3.2" height="0.1" depth="0.05" src="#bois" repeat="3 1"
+                                                position="0 0.05 0" roughness="0.85">
+                                        </a-box>
+
+                                        <!---------------------SAS----------------------->
+                                        <a-plane id="sas" position="0 -1 0"
+                                                width="3" height="2" src="#plaster" repeat="3 2"
+                                                side="double" roughness="0.85">
+                                        </a-plane>
+
+                                </a-entity>
+
+                                <!--------------------mur de droite-------------------->
+                                <a-entity position="4 0 0" rotation="0 -90 0">
+                                        <a-plane src="#plaster" repeat="9 4" width="9" height="4" side="double" roughness="0.85" >
+                                        </a-plane>
+                                        <!--------------------plainte-------------------->
+                                        <a-box width="9" height="0.1" depth="0.05" src="#bois" repeat="1 2"
+                                                position="0 -1.95 0" roughness="0.85">
+                                        </a-box>
+                                        <!--------------------logo de renaskia-------------------->
+                                        <a-image src="#logorenaskia" position="0 0.8 0.011" width="2" height="2.12"  opacity="0.9">
+                                        </a-image>
+                                        <!---------------------CADRE PHOTO FACE----------------------->     
+                                        <a-plane  position="0 -0.6 0.1" rotation="0 0 0"
+                                                width="1.2" height="0.864" src="#acier" metalness="0.45" roughness="0.4"
+                                                side="double" roughness="0.85">
+                                                <!---------------------gauche----------------------->
+                                                <a-box width="0.08" height="0.864" depth="0.08" src="#acier" metalness="0.45" roughness="0.4"
+                                                        position="-0.56 0 0" roughness="0.85"></a-box>
+                                                <!---------------------droite----------------------->
+                                                <a-box width="0.08" height="0.864" depth="0.08" src="#acier" metalness="0.45" roughness="0.4"
+                                                        position="0.56 0 0" roughness="0.85"></a-box>
+                                                <!---------------------haute----------------------->
+                                                <a-box width="1.2" height="0.08" depth="0.08" src="#acier" metalness="0.45" roughness="0.4"
+                                                        position="0 -0.392 0" roughness="0.85"></a-box>
+                                                <!---------------------bas----------------------->
+                                                <a-box width="1.12" height="0.08" depth="0.08" src="#acier" metalness="0.45" roughness="0.4"
+                                                        position="0 0.392 0" roughness="0.85"></a-box>
+                                                <!---------------------image face----------------------->
+                                                <a-image position="0 0 0.0088" src="#face" width="1.04" height="0.68"></a-image>
+                                        </a-plane>
+                                </a-entity>
+
+                                <!--------------------mur de du fond-------------------->
+                                <a-entity position="0 0 -4.5">
+
+                                        <!-------------------------------haut------------------------------->
+                                        <a-plane position="0 1.75 0" src="#plaster" repeat="6 .5" width="6" height="0.5"
+                                                depth="0.05" side="double" roughness="0.85" >
+                                        </a-plane>
+                                        <!--------------------plainte-------------------->
+                                        <a-box width="6.1" height="0.1" depth="0.05" src="#bois" repeat="6 1"
+                                                position="0 1.5 0" roughness="0.85">
+                                        </a-box>
+
+                                        <!-------------------------------bas------------------------------->
+                                        <a-plane position="0 -1.75 0" src="#plaster" repeat="6 1" width="6" height="0.5"
+                                                depth="0.05" side="double" roughness="0.85">
+                                        </a-plane>
+                                        <!--------------------plainte-------------------->
+                                        <a-box width="6.1" height="0.1" depth="0.05" src="#bois" repeat="6 1"
+                                                position="0 -1.5 0" roughness="0.85">
+                                        </a-box>
+
+                                        <!-------------------------------gauche------------------------------->
+                                        <a-plane position="-3.5 0 0" src="#plaster" repeat="1 4" width="1" height="4"
+                                                depth="0.05" side="double" roughness="0.85" >
+                                        </a-plane>
+                                        <!--------------------plainte-------------------->
+                                        <a-box width="0.1" height="2.9" depth="0.05" src="#bois" repeat="1 3"
+                                                position="-3 0 0" roughness="0.85">
+                                        </a-box>
+
+                                        <!-------------------------------droite------------------------------->
+                                        <a-plane  position="3.5 0 0" src="#plaster" repeat="1 4" width="1" height="4"
+                                                depth="0.05" side="double" roughness="0.85" >
+                                        </a-plane>
+                                        <!--------------------plainte-------------------->
+                                        <a-box width="0.1" height="2.9" depth="0.05" src="#bois" repeat="1 3"
+                                                position="3 0 0" roughness="0.85">
+                                        </a-box>
+
+                                        <!--------------------baie vitrée-------------------->
+                                        <a-box width="6" height="3" depth="0.02" 
+                                                position="0 0 0"
+                                                color="#9fb4ff" transparent="true"
+                                                opacity="0.10" roughness="0.1" metalness="0.2"></a-box>
+                                        <!--------------------plainte sol-------------------->
+                                        <a-box width="8" height="0.1" depth="0.05" src="#bois" repeat="1 2"
+                                                position="0 -1.95 0" roughness="0.85">
+                                        </a-box>
+                                </a-entity>
+
+                                <!--------------------mur de l'entrée-------------------->
+                                <a-entity position="0 0 4.5" rotation="180 0 0">
+                                        <!-------------------------------haut------------------------------->
+                                        <a-plane position="0 -1 0" src="#plaster" 
+                                                repeat="2 2" width="2" height="2"
+                                                depth="0.05" side="double" roughness="0.85" >
+                                        </a-plane>
+                                        <!--------------------plainte-------------------->
+                                        <a-box width="2.2" height="0.1" depth="0.05" src="#bois" repeat="2 1"
+                                                position="0 0 0" roughness="0.85">
+                                        </a-box>
+                                        <!-------------------------------gauche------------------------------->
+                                        <a-plane position="-2.5 0 0" src="#plaster" 
+                                                repeat="3 4" width="3" height="4"
+                                                depth="0.05" side="double" roughness="0.85">
+                                        </a-plane>
+                                        <!--------------------plainte-------------------->
+                                        <a-box width="0.1" height="1.86" depth="0.05" src="#bois" repeat="1 2"
+                                                position="-1.05 0.975 0" roughness="0.85">
+                                        </a-box>
+                                        <!-------------------------------droite------------------------------->
+                                        <a-plane position="2.5 0 0" src="#plaster" 
+                                                repeat="3 4" width="3" height="4"
+                                                depth="0.05" side="double" roughness="0.85" >
+                                        </a-plane>
+                                        <!--------------------plainte-------------------->
+                                        <a-box width="0.1" height="1.86" depth="0.05" src="#bois" repeat="1 2"
+                                                position="1.05 0.975 0" roughness="0.85">
+                                        </a-box>
+                                        <!--------------------porte-------------------->
+                                        <a-entity>
+                                                <!--------------------porte-------------------->
+                                                <a-plane width="1.25" height="2"
+                                                        position="0.4 1 0" color="grey"
+                                                        side="double" roughness="0.85"></a-plane>
+                                                <!--------------------coté porte-------------------->
+                                                <a-plane width="0.75" height="2"
+                                                        position="-0.62 1 0" color="grey"
+                                                        side="double" roughness="0.85"></a-plane>
+                                                <!--------------------batant-------------------->
+                                                <a-box position="-0.23 1.03 0"
+                                                        width="0.05" height="1.95" depth="0.05"
+                                                        color="darkgrey" roughness="0.85"></a-box>
+                                        </a-entity>
+                                        <!--------------------plainte sol-------------------->
+                                        <a-box width="3" height="0.1" depth="0.05" src="#bois" repeat="1 2"
+                                                position="-2.5 1.95 0" roughness="0.85">
+                                        </a-box>
+                                        <a-box width="3" height="0.1" depth="0.05" src="#bois" repeat="1 2"
+                                                position="2.5 1.95 0" roughness="0.85">
+                                        </a-box>
+                                        <!--------------------panneau chantier-------------------->
+                                        <a-entity position="0 0.7 -0.5" rotation="0 0 180">
+                                                <a-curvedimage id="panels"  src="#panneau" height="3.0" radius="-6" theta-length="360"
+                                                        repeat="2 1" scale="0.2 0.2 0.2"></a-curvedimage>
+                                                <a-curvedimage id="borders" src="#tirets" height="3.0" radius="6.1" theta-length="360"
+                                                        repeat="2 1" scale="0.2 0.2 0.2"></a-curvedimage>
+                                        </a-entity>
+                                </a-entity>
+
+                        </a-entity>
+                        <!---------------------CONTROL DU SAS PIECE PRINCIPALE----------------------->                        
+                        <a-box id="control-sas" position="-3.97 1.5 -2" rotation="0 90 0"
+                               class="clickable"  src="#handRightSas"
+                               width="0.3" height="0.4" depth="0.05" color="aqua"
+                               emissive="aqua" emissive-intensity="0.1" 
+                               sound=  "src: url(assets/sounds/sas.mp3); 
+                                        on: click; 
+                                        distanceModel: exponential; 
+                                        volume:1;
+                                        refDistance: 5;
+                                        rolloffFactor: 4" 
+                                open-sas>
+                        </a-box>
+                        <!---------------------BUREAU----------------------->
+                        <a-entity position="0 0.01 -3.7">
+
+                                <!---------------------SURFACE DE CONTROLE BUREAU----------------------->
+                                <a-entity id="tactil-pad" position="0 1.2 0.2" rotation="30 0 0">
+                                        <a-box  id="control-surface"
+                                                width="0.8" height="0.05" depth="0.5"
+                                                src="#acier" metalness="0.45" roughness="0.4"></a-box>
+                                        <!--------------------rangée du bas-------------------->
+                                        <a-entity position="0 -0.02 -0.12">
+                                                <a-box id="pad1" class="clickable pad" position="-0.2 0.05 0"
+                                                        width="0.15" height="0.025" depth="0.15" color="aqua"
+                                                        emissive="aqua" emissive-intensity="0.5">
+                                                        <a-image src="#presentation" position="0 0.015 0" rotation="-90 0 0"
+                                                                width="0.15" height="0.15"></a-image>
+                                                </a-box>
+                                                <a-box id="pad2" class="clickable pad" position="0 0.05 0"
+                                                        width="0.15" height="0.025" depth="0.15"
+                                                        emissive="aqua" emissive-intensity="0.5" color="aqua">
+                                                        <a-image src="#engagements" position="0 0.015 0" rotation="-90 0 0"
+                                                                width="0.15" height="0.15"></a-image>
+                                                </a-box>
+                                                <a-box id="pad3" class="clickable pad" position="0.2 0.05 0"
+                                                        width="0.15" height="0.025" depth="0.15"
+                                                        emissive="aqua" emissive-intensity="0.5" color="aqua">
+                                                        <a-image src="#formations" position="0 0.015 0" rotation="-90 0 0"
+                                                                width="0.15" height="0.15"></a-image>
+                                                </a-box>
+                                        </a-entity>
+                                        <!--------------------rangée du haut-------------------->
+                                        <a-entity position="0 -0.02 0.12">
+                                                <a-box id="pad4" class="clickable pad" position="-0.2 0.05 0"
+                                                        width="0.15" height="0.025" depth="0.15"
+                                                        emissive="aqua" emissive-intensity="0.5" color="aqua">
+                                                        <a-image src="#prestations" position="0 0.015 0" rotation="-90 0 0"
+                                                                width="0.15" height="0.15"></a-image>
+                                                </a-box>
+                                                <a-box id="pad5" class="clickable pad" position="0 0.05 0"
+                                                        width="0.15" height="0.025" depth="0.15"
+                                                        emissive="aqua" emissive-intensity="0.5" color="aqua">
+                                                        <a-image src="#partenaires" position="0 0.015 0" rotation="-90 0 0"
+                                                                width="0.15" height="0.15"></a-image>
+                                                </a-box>
+                                                <a-box id="pad6" class="clickable pad" position="0.2 0.05 0"
+                                                        width="0.15" height="0.025" depth="0.15"
+                                                        emissive="aqua" emissive-intensity="0.5" color="aqua">
+                                                        <a-image src="#infos" position="0 0.015 0" rotation="-90 0 0"
+                                                                width="0.15" height="0.15"></a-image>
+                                                </a-box>
+                                        </a-entity>
+                                </a-entity>
+
+                                <!---------------------BUREAU----------------------->
+                                <a-entity id="desk">
+
+                                        <!-----------------------plateau du dessus----------------------->
+                                        <a-box  width="2" height="0.05" depth="1" position="0 1 0" src="#acier" metalness="0.45" roughness="0.4"
+                                               repeat="4 2"></a-box>
+                                        <!-----------------------pieds de gauche à droite----------------------->
+                                        <a-box  width="1" height="0.05" depth="0.9" rotation="0 0 90"
+                                                position="-0.9 0.5 0" src="#acier" metalness="0.45" roughness="0.4"></a-box>
+                                        <a-box width="1" height="0.05" depth="0.9" rotation="0 0 90"
+                                                position="-0.4 0.5 0" src="#acier" metalness="0.45" roughness="0.4"></a-box>
+                                        <a-box width="1" height="0.05" depth="0.9" rotation="0 0 90"
+                                                position="0.4 0.5 0" src="#acier" metalness="0.45" roughness="0.4">
+                                        </a-box>
+                                        <a-box width="1" height="0.05" depth="0.9" rotation="0 0 90"
+                                                position="0.9 0.5 0" src="#acier" metalness="0.45" roughness="0.4">
+                                        </a-box>
+
+                                        <!-----------------------tiroirs de gauche: 1er tiroir----------------------->
+                                        <a-entity position="-0.65 -0.76 0.214" id="tiroir1">
+                                                <!-----------------------fond de tiroir----------------------->
+                                                <a-box width="0.4" height="0.02" depth="0.5" position="0 1.5 0"
+                                                        src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                        <!--------------------sucreries-------------------->
+                                                        <a-plane position="0 0.05 0" rotation="-90 0 0" 
+                                                                 src="#candys" width="0.8" height="0.8"
+                                                                 scale="0.4 0.4" transparent="true"></a-plane>
+                                                </a-box>
+                                                <!-----------------------coté gauche de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="-0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------coté droit de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------arriere de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.40" rotation="0 90 90"
+                                                        position="0 1.6 -0.241" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------facade de tiroir----------------------->
+                                                <a-box width="0.26" height="0.02" depth="0.5" rotation="0 90 90"
+                                                        position="0 1.6 0.25" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true" class="clickable">
+                                                </a-box>
+                                                <!-----------------------bouton de tiroir----------------------->
+                                                <a-box width="0.05" height="0.04" depth="0.07" rotation="0 90 90"
+                                                        position="0 1.6 0.26" src="#acier" metalness="0.45" roughness="0.4" id="boutonTiroir1"></a-box>
+                                        </a-entity>
+
+                                        <!-----------------------tiroirs de gauche: 2eme tiroir----------------------->
+                                        <a-entity position="-0.65 -1.027 0.214" id="tiroir2">
+                                                <!-----------------------fond de tiroir----------------------->
+                                                <a-box width="0.4" height="0.02" depth="0.5" position="0 1.5 -0"
+                                                        src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                        <!--------------------sucreries-------------------->
+                                                        <a-plane position="0 0.05 0" rotation="-90 0 0" 
+                                                                 src="#chocolates" width="0.8" height="0.8"
+                                                                 scale="0.4 0.4" transparent="true"></a-plane>
+                                                </a-box>
+                                                <!-----------------------coté gauche de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="-0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------coté droit de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------arriere de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.40" rotation="0 90 90"
+                                                        position="0 1.6 -0.241" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------facade de tiroir----------------------->
+                                                <a-box width="0.26" height="0.02" depth="0.5" rotation="0 90 90"
+                                                        position="0 1.6 0.25" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true" class="clickable">
+                                                </a-box>
+                                                <!-----------------------bouton de tiroir----------------------->
+                                                <a-box width="0.05" height="0.04" depth="0.07" rotation="0 90 90"
+                                                       position="0 1.6 0.26" src="#acier" metalness="0.45" roughness="0.4">
+                                                </a-box>
+                                        </a-entity>
+                                        <!-----------------------tiroirs de gauche: 3eme tiroir----------------------->
+                                        <a-entity position="-0.65 -1.292 0.214" id="tiroir3">
+                                                <!-----------------------fond de tiroir----------------------->
+                                                <a-box width="0.4" height="0.02" depth="0.5" position="0 1.5 0"
+                                                        src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                        <!--------------------sucreries-------------------->
+                                                        <a-plane position="0 0.05 0" rotation="-90 0 0" 
+                                                                 src="#twix" width="0.8" height="0.8" repeat="2 4"
+                                                                 scale="0.4 0.4" transparent="true"></a-plane>
+                                                </a-box>
+                                                <!-----------------------coté gauche de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="-0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------coté droit de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------arriere de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.40" rotation="0 90 90"
+                                                        position="0 1.6 -0.241" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------facade de tiroir----------------------->
+                                                <a-box width="0.26" height="0.02" depth="0.5" rotation="0 90 90"
+                                                        position="0 1.6 0.25" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true" class="clickable">
+                                                </a-box>
+                                                <!-----------------------bouton de tiroir----------------------->
+                                                <a-box width="0.05" height="0.04" depth="0.07" rotation="0 90 90"
+                                                        position="0 1.6 0.26" src="#acier" metalness="0.45" roughness="0.4">
+                                                </a-box>
+                                        </a-entity>
+                                        <!-----------------------tiroirs de droite: 1eme tiroir----------------------->
+                                        <a-entity position="0.65 -0.76 0.214" id="tiroir4">
+                                                <!-----------------------fond de tiroir----------------------->
+                                                <a-box width="0.4" height="0.02" depth="0.5" position="0 1.5 0"
+                                                        src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                        <!-----------------------bouton rouge----------------------->
+                                                        <a-box width="0.2" height="0.05" depth="0.2"
+                                                                position="0 0.05 0" color="black">
+                                                                <a-box id="red-button" width="0.05" height="0.02" depth="0.05"
+                                                                        color="red" position="0 0.025 0" clck></a-box>
+                                                        </a-box>
+                                                </a-box>
+                                                <!-----------------------coté gauche de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="-0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------coté droit de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------arriere de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.40" rotation="0 90 90"
+                                                        position="0 1.6 -0.241" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------facade de tiroir----------------------->
+                                                <a-box width="0.26" height="0.02" depth="0.5" rotation="0 90 90"
+                                                        position="0 1.6 0.25" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true" class="clickable">
+                                                </a-box>
+                                                <!-----------------------bouton de tiroir----------------------->
+                                                <a-box width="0.05" height="0.04" depth="0.07" rotation="0 90 90"
+                                                        position="0 1.6 0.26" src="#acier" metalness="0.45" roughness="0.4">
+                                                </a-box>
+                                        </a-entity>
+                                        <!-----------------------tiroirs de droite: 2eme tiroir----------------------->
+                                        <a-entity position="0.65 -1.027 0.214" id="tiroir5">
+                                                <!-----------------------fond de tiroir----------------------->
+                                                <a-box width="0.4" height="0.02" depth="0.5" position="0 1.5 0"
+                                                        src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true"></a-box>
+                                                <!-----------------------coté gauche de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="-0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------coté droit de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------arriere de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.40" rotation="0 90 90"
+                                                        position="0 1.6 -0.241" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------facade de tiroir----------------------->
+                                                <a-box width="0.26" height="0.02" depth="0.5" rotation="0 90 90"
+                                                        position="0 1.6 0.25" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true" class="clickable">
+                                                </a-box>
+                                                <!-----------------------bouton de tiroir----------------------->
+                                                <a-box width="0.05" height="0.04" depth="0.07" rotation="0 90 90"
+                                                        position="0 1.6 0.26" src="#acier" metalness="0.45" roughness="0.4">
+                                                </a-box>
+                                        </a-entity>
+                                        <!-----------------------tiroirs de droite: 3eme tiroir----------------------->
+                                        <a-entity position="0.65 -1.292 0.214" id="tiroir6">
+                                                <!-----------------------fond de tiroir----------------------->
+                                                <a-box width="0.4" height="0.02" depth="0.5" position="0 1.5 0"
+                                                        src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true"></a-box>
+                                                <!-----------------------coté gauche de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="-0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------coté droit de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.5" rotation="0 0 90"
+                                                        position="0.19 1.61 0" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------arriere de tiroir----------------------->
+                                                <a-box width="0.2" height="0.02" depth="0.40" rotation="0 90 90"
+                                                        position="0 1.6 -0.241" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true">
+                                                </a-box>
+                                                <!-----------------------facade de tiroir----------------------->
+                                                <a-box width="0.26" height="0.02" depth="0.5" rotation="0 90 90"
+                                                        position="0 1.6 0.25" src="#acier" metalness="0.45" roughness="0.4" shadow="receive:true" class="clickable">
+                                                </a-box>
+                                                <!-----------------------bouton de tiroir----------------------->
+                                                <a-box width="0.05" height="0.04" depth="0.07" rotation="0 90 90"
+                                                        position="0 1.6 0.26" src="#acier" metalness="0.45" roughness="0.4">
+                                                </a-box>
+                                        </a-entity>
+                                </a-entity>
+
+                        </a-entity>
+                        <!---------------------CANAPE----------------------->
+                        <a-entity position="3.3 0 0" rotation="0 180 0">
+                                <!--------------------bras gauche-------------------->
+                                <a-box position="0 0.3 -1" rotation=""
+                                        src="#acier" metalness="0.45" roughness="0.4" width="1" height="0.6" depth="0.05"></a-box>
+                                <!--------------------bras droit-------------------->
+                                <a-box position="0 0.3 1" rotation=""
+                                        src="#acier" metalness="0.45" roughness="0.4" width="1" height="0.6" depth="0.05"></a-box>
+                                <!--------------------plateau-------------------->
+                                <a-box position="0 0.3 0" rotation="0 90 0"
+                                        src="#acier" metalness="0.45" roughness="0.4" width="1.95" height="0.05" depth="0.7"></a-box>
+                                <!--------------------dossier-------------------->
+                                <a-box position="-0.4 0.6 0" rotation="70 90 0"
+                                        src="#acier" metalness="0.45" roughness="0.4" width="1.95" height="0.05" depth="0.7"></a-box>
+                                        
+                                <!--------------------coussin plateau gauche-------------------->
+                                <a-box position="0.1 0.4 0.475" rotation="0 90 0"
+                                src="#tissu" width="0.92" height="0.15" depth="0.7" roughness="0.85"></a-box>
+                                <!--------------------coussin plateau droit-------------------->
+                                <a-box position="0.1 0.4 -0.475" rotation="0 90 0"
+                                src="#tissu" width="0.92" height="0.15" depth="0.7" roughness="0.85"></a-box>
+                                
+                                <!--------------------coussin dossier gauche-------------------->
+                                <a-box position="-0.3 0.7 0.475" rotation="70 90 0"
+                                src="#tissu" width="0.92" height="0.15" depth="0.7" roughness="0.85">
+                                        <!--------------------titre du réalisateur-------------------->
+                                        <a-image src="#titre" position="0 0.08 -0.1" rotation="-90 0 0"
+                                                scale="0.7 0.35 0.7"></a-image>
+                                </a-box>
+                                <!--------------------coussin dossier droit-------------------->
+                                <a-box position="-0.3 0.7 -0.475" rotation="70 90 0"
+                                src="#tissu" width="0.92" height="0.15" depth="0.7" roughness="0.85"></a-box>
+                        </a-entity>
+                        <!---------------------TV--------------------->
+                        <a-entity position="-3.95 1.5 -3" rotation="0 -90 0">
+                                <a-box width="1.3" height="0.9" depth="0.05" color="#05060f" metalness="0.6" roughness="0.25">
+                                        <a-box width="1.36" height="0.96" depth="0.01" position="0 0 0.03" color="#7C3AED" emissive="#7C3AED" emissive-intensity="1.6"></a-box>
+                                        <a-entity id="tv" position="0 0.05 -0.026" rotation="0 180 0">
+                                                <a-video id="pub" src="#video1" width="1.28" height="0.72"></a-video>
+                                                <a-image id="idle1" src="#tvidle1" width="1.28" height="0.72" position="0 0 0.004"></a-image>
+                                                <a-box id="buttonTv" class="clickable" width="0.1" height="0.06" depth="0.05"
+                                                        position="0 -0.43 0"
+                                                        emissive="aqua" emissive-intensity="1" play-pause>
+                                                </a-box>
+                                        </a-entity>                                
+                                </a-box>
+                        </a-entity>
+                        <!---------------------ETAGERE GAUCHE----------------------->
+                        <a-entity position="3.7 -0.5 -2.85" rotation="0 90 0">
+
+                                <!--------------------supports-------------------->
+                                <a-entity position="0 -0.23 0">
+                                        <a-box position="-1.5 2 0" rotation="0 90 0" 
+                                                width="0.5" height="1.5" depth="0.05"
+                                                src="#acier" metalness="0.45" roughness="0.4" repeat="1 2" side="double">
+                                        </a-box>
+                                        <a-box position="1.5 2 0" rotation="0 90 0" 
+                                                width="0.5" height="1.5" depth="0.05"
+                                                src="#acier" metalness="0.45" roughness="0.4" repeat="1 2">
+                                        </a-box>
+                                </a-entity>
+                                <!--------------------étagères-------------------->
+                                <a-entity>
+                                        <a-box position="0 1.05 0" rotation="90 90 0" 
+                                        width="0.5" height="3" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4" repeat="1 3">
+                                        </a-box>
+                                        <a-box position="0 1.8 0" rotation="90 90 0" 
+                                        width="0.5" height="3" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4" repeat="1 3">
+                                        </a-box>
+                                        <a-box position="0 2.495 0" rotation="90 90 0" 
+                                        width="0.5" height="3" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4" repeat="1 3">
+                                        </a-box>
+                                </a-entity>
+                                <!--------------------photos-------------------->
+                                <a-entity position="0 2 -0.05">
+                                        <!--------------------cadre photo superman-------------------->
+                                        <a-entity position="1.1 0 0" rotation="-20 190 0" scale="1.5 1.5 1.5">
+                                                <a-box width="0.40" height="0.26" depth="0.02" src="#acier" metalness="0.45" roughness="0.4">
+                                                        <a-image src="#superman" position="0 0 0.011"
+                                                                width="0.29" height="0.18"></a-image>
+                                                </a-box>
+                                        </a-entity>
+                                        <!--------------------cadre photo groupe-------------------->
+                                        <a-entity position="0.4 0 0" rotation="-20 190 0" scale="1.5 1.5 1.5">
+                                                <a-box width="0.40" height="0.26" depth="0.02" src="#acier" metalness="0.45" roughness="0.4">
+                                                        <a-image src="#groupe" position="0 0 0.011"
+                                                                width="0.32" height="0.22"></a-image>
+                                                </a-box>
+                                        </a-entity>
+                                        <!--------------------cadre photo teknik-------------------->
+                                        <a-entity position="-0.4 0 0" rotation="-20 170 0" scale="1.5 1.5 1.5">
+                                                <a-box width="0.40" height="0.26" depth="0.02" src="#acier" metalness="0.45" roughness="0.4">
+                                                        <a-image src="#teknik" position="0 0 0.011"
+                                                                width="0.32" height="0.18"></a-image>
+                                                </a-box>
+                                        </a-entity>
+                                        <!--------------------cadre photo afterwork-------------------->
+                                        <a-entity position="-1.1 0 0" rotation="-20 170 0" scale="1.5 1.5 1.5">
+                                                <a-box width="0.40" height="0.26" depth="0.02" src="#acier" metalness="0.45" roughness="0.4">
+                                                        <a-image src="#afterwork" position="0 0 0.011"
+                                                                width="0.32" height="0.18"></a-image>
+                                                </a-box>
+                                        </a-entity>
+
+                                </a-entity>
+                                <!--------------------rubik's cube-------------------->
+                                <a-obj-model src="#rubik-obj" mtl="#rubik-mtl" scale="2 2 2" position="0.9 1.15 -0.1" rotation="90 135 0"></a-obj-model>                                
+                                <!--------------------imprimante 3D-------------------->
+                                <a-entity position="-1.1 1.15 0" rotation="0 180 0" scale="1.5 1.5 1.5">
+
+                                        <!--------------------socle-------------------->
+                                        <a-entity>
+                                                <!--------------------support inférieur-------------------->
+                                                <a-box width="0.3" height="0.05" depth="0.3" src="#acier" metalness="0.45" roughness="0.4">
+                                                </a-box>
+                                                <a-box width="0.02" height="0.04" depth="0.28" src="#acier" metalness="0.45" roughness="0.4"
+                                                        position="0 0.03 0">
+                                                </a-box>
+                                                <!--------------------plateau-------------------->
+                                                <a-entity position="0 0.07 0.05">
+                                                        <a-box width="0.3" height="0.005" depth="0.3" color="aqua">
+                                                        </a-box>
+                                                        <!--------------------barre chocolatée imprimée-------------------->
+                                                        <a-box position="0 0.01 0" rotation="" color="black"
+                                                                width="0.1" height="0.01" depth="0.02">
+                                                                <a-plane src="#twix" position="0 0.0051 0" rotation="-90 0 0"
+                                                                        width="0.12" height="0.045" transparent="true"></a-plane>
+                                                        </a-box>
+                                                </a-entity>
+                                                <!--------------------bouton on/off-------------------->
+                                                <a-box width="0.02" height="0.03" depth="0.01" position="0.08 0 0.149"
+                                                        rotation="" emissive="red" emissive-intensity="2"></a-box>
+
+                                        </a-entity>
+
+                                        <!--------------------bloc controle-------------------->
+                                        <a-entity position="-0.08 0 0.165" rotation="-45 0 0">
+                                                <a-box width="0.1" height="0.05" depth="0.01" src="#acier" metalness="0.45" roughness="0.4">
+                                                </a-box>
+
+                                                <a-entity position="0.035 0 0.01" rotation="90 0 0">
+
+                                                        <!--------------------bouton selection-------------------->
+                                                        <a-cylinder radius="0.008" height="0.011" segment-radial="6" src="#acier" metalness="0.45" roughness="0.4">
+                                                        </a-cylinder>
+
+                                                </a-entity>
+
+                                                <!--------------------ecran-------------------->
+                                                <a-entity position="0 0.003 0.006">
+
+                                                        <a-plane position="-0.01 -0.002 0" width="0.06" height="0.04"
+                                                                emissive="aqua" emissive-intensity="0.7">
+                                                        </a-plane>
+                                                        <a-text id="texte" position="-0.037 0 0" value="impression"
+                                                                color="black" width="0.2">
+                                                        </a-text>
+
+                                                </a-entity>
+
+                                        </a-entity>
+
+                                        <!--------------------armature et bloc Nozzle-------------------->
+                                        <a-entity position="0 0.15 0">
+
+                                                <!--------------------bras gauche-------------------->
+                                                <a-box position="-0.17 0 0" width="0.04" height="0.4" depth="0.04"
+                                                        src="#acier" metalness="0.45" roughness="0.4">
+                                                </a-box>
+
+                                                <!--------------------bras droit-------------------->
+                                                <a-box width="0.04" height="0.4" depth="0.04" src="#acier" metalness="0.45" roughness="0.4" position="0.17 0 0">
+                                                </a-box>
+
+                                                <!--------------------bras du haut-------------------->
+                                                <a-box width="0.3" height="0.02" depth="0.02" src="#acier" metalness="0.45" roughness="0.4" repeat="2 1"
+                                                        position="0 -0.004 0">
+                                                </a-box>
+
+                                                <!--------------------nozzle-------------------->
+                                                <a-entity id="nozzle" position="-0.04 -0.014 0.025">
+
+                                                        <!--------------------extrudeur-------------------->
+                                                        <a-box src="#acier" metalness="0.45" roughness="0.4" width="0.05" height="0.05" depth="0.025"
+                                                                color="red"></a-box>
+                                                        <a-cylinder height="0.02" radius="0.007" src="#acier" metalness="0.45" roughness="0.4"
+                                                                position="0 -0.03 0">
+                                                        </a-cylinder>
+                                                        <a-cone radius-bottom="0.001" radius-top="0.007" height="0.01"
+                                                                position="0 -0.045 0" color="yellow" src="#laiton">
+                                                        </a-cone>
+
+                                                </a-entity>
+
+                                        </a-entity>
+
+                                </a-entity>
+                                <!--------------------plante-------------------->
+                                <a-obj-model src="#plante-obj" mtl="#plante-mtl" fix-dark scale="0.1 0.1 0.1" position="1.1 1.05 0"></a-obj-model>
+                                <!--------------------lumiere plante-------------------->
+                                <a-light type="spot" position="1.1 1.8 0" rotation="-90 0 0" angle="10"></a-light>
+                                <!--------------------livres-------------------->
+                                <a-entity position="0.7 1.3 0.1" scale="0.9 0.9 0.9">
+                                        <!--------------------livres bootstrap-------------------->
+                                        <a-entity position="0 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#bootstrap" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>     
+                                        <!--------------------livres docker-------------------->
+                                        <a-entity position="-0.1 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#docker" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>   
+                                        <!--------------------livres jquery-------------------->
+                                        <a-entity position="-0.2 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#jquery" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>  
+                                        <!--------------------livres kubernetes-------------------->
+                                        <a-entity position="-0.3 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#kubernetes" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity> 
+                                        <!--------------------livres reseaux-------------------->
+                                        <a-entity position="-0.4 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#reseaux" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity> 
+                                        <!--------------------livres seo-------------------->
+                                        <a-entity position="-0.5 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#seo" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>
+                                        <!--------------------livres symfony-------------------->
+                                        <a-entity position="-0.6 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#symfony" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity> 
+                                        <!--------------------livres vagrant-------------------->
+                                        <a-entity position="-0.7 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#vagrant" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>   
+                                        <!--------------------livres virtualisation-------------------->
+                                        <a-entity position="-0.8 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#virtualisation" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>
+                                         <!--------------------livres html-------------------->
+                                        <a-entity position="-0.9 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#html" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>     
+                                        <!--------------------livres css-------------------->
+                                        <a-entity position="-1 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#css" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>   
+                                        <!--------------------livres wordpress-------------------->
+                                        <a-entity position="-1.1 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#wordpress" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>  
+                                        <!--------------------livres linux-------------------->
+                                        <a-entity position="-1.2 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#linux" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity> 
+                                        <!--------------------livres windows-------------------->
+                                        <a-entity position="-1.3 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#windows" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity> 
+                                        <!--------------------livres bitcoin-------------------->
+                                        <a-entity position="-1.4 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#bitcoin" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>
+                                        <!--------------------livres active-------------------->
+                                        <a-entity position="-1.5 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#active" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity> 
+                                        <!--------------------livres servers-------------------->
+                                        <a-entity position="-1.6 0 -0.14">
+                                                <a-box  width="0.08" height="0.44" depth="0.3"
+                                                        color="#ffd700">
+                                                </a-box>
+                                                <a-image src="#servers" position="0 0 -0.151" rotation="0 180 0"
+                                                        width="0.070" height="0.430"></a-image>
+                                        </a-entity>       
+                                </a-entity>
+
+                        </a-entity>
+                        <!---------------------ETAGERE DROITE----------------------->
+                        <a-entity position="3.7 -0.5 2.85" rotation="0 90 0">
+                                <!--------------------etiquette-------------------->
+                                <a-image src="#svc-etiquette" position="0 2.52 -0.255" rotation="0 180 0" width="0.5" height="0.1"></a-image>
+                                <!--------------------supports-------------------->
+                                <a-entity position="0 -0.23 0">
+                                        <a-box position="-1.5 2 0" rotation="0 90 0" 
+                                                width="0.5" height="1.5" depth="0.05"
+                                                src="#acier" metalness="0.45" roughness="0.4" repeat="1 2" side="double">
+                                        </a-box>
+                                        <a-box position="1.5 2 0" rotation="0 90 0" 
+                                                width="0.5" height="1.5" depth="0.05"
+                                                src="#acier" metalness="0.45" roughness="0.4" repeat="1 2">
+                                        </a-box>
+                                </a-entity>
+                                <!--------------------étagères-------------------->
+                                <a-entity>
+                                        <a-box position="0 1.05 0" rotation="90 90 0" 
+                                        width="0.5" height="3" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4" repeat="1 3">
+                                        </a-box>
+                                        <a-box position="0 1.8 0" rotation="90 90 0" 
+                                        width="0.5" height="3" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4" repeat="1 3">
+                                        </a-box>
+                                        <a-box position="0 2.495 0" rotation="90 90 0" 
+                                        width="0.5" height="3" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4" repeat="1 3">
+                                        </a-box>
+                                </a-entity>
+                                <!--------------------vignettes services (formation / e-learning)-------------------->
+                                <a-entity position="0.6 2.11 0" rotation="0 180 0" scale="0.92 0.92 0.92">
+                                        <a-box width="1.1" height="0.03" depth="0.07" position="0 -0.305 0.03" color="#1b2036" roughness="0.5" metalness="0.6"></a-box>
+                                        <a-entity rotation="-11 0 0">
+                                                <a-box width="1.1" height="0.641" depth="0.02" color="#0b1236" roughness="0.4" metalness="0.4"></a-box>
+                                                <a-image src="#svc-lms" position="0 0 0.012" width="1.05" height="0.591"></a-image>
+                                        </a-entity>
+                                </a-entity>
+                                <a-entity position="-0.6 2.11 0" rotation="0 180 0" scale="0.92 0.92 0.92">
+                                        <a-box width="1.1" height="0.03" depth="0.07" position="0 -0.305 0.03" color="#1b2036" roughness="0.5" metalness="0.6"></a-box>
+                                        <a-entity rotation="-11 0 0">
+                                                <a-box width="1.1" height="0.641" depth="0.02" color="#0b1236" roughness="0.4" metalness="0.4"></a-box>
+                                                <a-image src="#svc-serious" position="0 0 0.012" width="1.05" height="0.591"></a-image>
+                                        </a-entity>
+                                </a-entity>
+                                <a-entity position="0 1.4 0" rotation="0 180 0">
+                                        <a-box width="1.1500000000000001" height="0.03" depth="0.07" position="0 -0.320 0.03" color="#1b2036" roughness="0.5" metalness="0.6"></a-box>
+                                        <a-entity rotation="-11 0 0">
+                                                <a-box width="1.1500000000000001" height="0.669" depth="0.02" color="#0b1236" roughness="0.4" metalness="0.4"></a-box>
+                                                <a-image src="#svc-formation" position="0 0 0.012" width="1.1" height="0.619"></a-image>
+                                        </a-entity>
+                                </a-entity>
+
+                        </a-entity>                      
+                        <!---------------------ETAGERE SAS----------------------->
+                        <a-entity position="-3.65 -0.5 3" rotation="0 90 0">
+                                
+                                <!--------------------etiquette-------------------->
+                                <a-image src="#svc-etiquette" position="0 2.52 0.255" width="0.5" height="0.1"></a-image>
+                                <!--------------------supports-------------------->
+                                <a-entity position="0 -0.23 0">
+                                        <a-box position="-1.4 2 0" rotation="0 90 0" 
+                                                width="0.5" height="1.5" depth="0.05"
+                                                src="#acier" metalness="0.45" roughness="0.4" repeat="1 2" side="double">
+                                        </a-box>
+                                        <a-box position="1.4 2 0" rotation="0 90 0" 
+                                                width="0.5" height="1.5" depth="0.05"
+                                                src="#acier" metalness="0.45" roughness="0.4" repeat="1 2">
+                                        </a-box>
+                                </a-entity>
+                                <!--------------------étagères-------------------->
+                                <a-entity>
+                                        <a-box position="0 1.05 0" rotation="90 90 0" 
+                                        width="0.5" height="2.8" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4" repeat="1 3">
+                                        </a-box>
+                                        <a-box position="0 1.8 0" rotation="90 90 0" 
+                                        width="0.5" height="2.8" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4" repeat="1 3">
+                                        </a-box>
+                                        <a-box position="0 2.495 0" rotation="90 90 0" 
+                                        width="0.5" height="2.8" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4" repeat="1 3">
+                                        </a-box>
+                                </a-entity>
+                                <!--------------------vignettes services (cybersécurité)-------------------->
+                                <a-entity position="-0.6 2.11 0" rotation="0 0 0" scale="0.92 0.92 0.92">
+                                        <a-box width="1.1" height="0.03" depth="0.07" position="0 -0.305 0.03" color="#1b2036" roughness="0.5" metalness="0.6"></a-box>
+                                        <a-entity rotation="-11 0 0">
+                                                <a-box width="1.1" height="0.641" depth="0.02" color="#0b1236" roughness="0.4" metalness="0.4"></a-box>
+                                                <a-image src="#svc-audit" position="0 0 0.012" width="1.05" height="0.591"></a-image>
+                                        </a-entity>
+                                </a-entity>
+                                <a-entity position="0.6 2.11 0" rotation="0 0 0" scale="0.92 0.92 0.92">
+                                        <a-box width="1.1" height="0.03" depth="0.07" position="0 -0.305 0.03" color="#1b2036" roughness="0.5" metalness="0.6"></a-box>
+                                        <a-entity rotation="-11 0 0">
+                                                <a-box width="1.1" height="0.641" depth="0.02" color="#0b1236" roughness="0.4" metalness="0.4"></a-box>
+                                                <a-image src="#svc-pentest" position="0 0 0.012" width="1.05" height="0.591"></a-image>
+                                        </a-entity>
+                                </a-entity>
+                                <a-entity position="0 1.4 0" rotation="0 0 0">
+                                        <a-box width="1.1500000000000001" height="0.03" depth="0.07" position="0 -0.320 0.03" color="#1b2036" roughness="0.5" metalness="0.6"></a-box>
+                                        <a-entity rotation="-11 0 0">
+                                                <a-box width="1.1500000000000001" height="0.669" depth="0.02" color="#0b1236" roughness="0.4" metalness="0.4"></a-box>
+                                                <a-image src="#svc-sensibilisation" position="0 0 0.012" width="1.1" height="0.619"></a-image>
+                                        </a-entity>
+                                </a-entity>
+
+                        </a-entity>
+                </a-entity>
+
+                <!---------------------AILE GAUCHE-------------------->
+                <a-entity id="aile-gauche" position="-7.02 0 0" rotation="0 90 0">
+                        
+                        <!--------------------mur de gauche du couloir-------------------->
+                        <a-entity position="-2 1 0" rotation="0 90 0">
+                                <a-plane src="#plaster" repeat="6 2" side="double" width="6" height="2" roughness="0.85"></a-plane>
+                                <!--------------------extérieur-------------------->
+                                <a-box src="#plaster" repeat="6 2" position="0 0 -0.06" width="6" height="2" depth="0.1"></a-box>
+                                <!--------------------posters du mur-------------------->
+                                <a-entity position="-0.015 0 0.02">
+                                        <a-image src="#lodro" side="double" width="1.2" height="1.6" position="-2 0 0">
+                                        </a-image>
+                                        <a-image src="#got" side="double" width="1.2" height="1.6" position="0 0 0">
+                                        </a-image>
+                                        <a-image src="#harry" side="double" width="1.2" height="1.6" position="2 0 0">
+                                        </a-image>
+                                </a-entity>
+                                <!--------------------plainte mur gauche du couloir-------------------->
+                                <a-box width="6" height="0.1" depth="0.05" src="#bois" repeat="1 2"
+                                        position="0 -0.95 0" roughness="0.85">
+                                </a-box>
+
+                        </a-entity>
+                        <!--------------------mur de droite du couloir-------------------->
+                        <a-entity position="2 1 0" rotation="0 -90 0">
+                                <a-plane src="#plaster" repeat="6 2" side="double" width="6" height="2" roughness="0.85" >
+                                </a-plane>
+                                <!--------------------extérieur-------------------->
+                                <a-box src="#plaster" repeat="6 2" position="0 0 -0.06" width="6" height="2" depth="0.1"></a-box>
+                                <!--------------------posters du mur-------------------->
+                                <a-entity position="-0.015 0 0.02">
+                                        <a-image src="#xmen" side="double" width="1.2" height="1.6" position="-2 0 0">
+                                        </a-image>
+                                        <a-image src="#matrix" side="double" width="1.2" height="1.6" position="0 0 0">
+                                        </a-image>
+                                        <a-image src="#star-wars" side="double" width="1.2" height="1.6"
+                                                position="2 0 0"></a-image>
+                                </a-entity>
+                                <!--------------------plainte mur gauche du couloir-------------------->
+                                <a-box width="6" height="0.1" depth="0.05" src="#bois" repeat="1 2"
+                                        position="0 -0.95 0" roughness="0.85">
+                                </a-box>
+
+                        </a-entity>
+                        <!--------------------plafond du couloir-------------------->
+                        <a-plane position="0 2 0" src="#plaster" repeat="4 6" side="double" width="4" height="6" rotation="90 0 0" roughness="0.85"></a-plane>
+                        <!--------------------extérieur-------------------->
+                        <a-box src="#plaster" repeat="4 6" position="0 2.1 0.06" rotation="90 0 0" width="4.2" height="5.9" depth="0.1"></a-box>
+                        <!--------------------sol du couloir-------------------->
+                        <a-plane position="0 0 0" src="#marbre-or" repeat="4 6" width="4" height="6.05" rotation="-90 0 0" roughness="0.85"></a-plane>                                          
+                        <!---------------------CONTROL DU SAS PIECE PRINCIPALE----------------------->                        
+                        <a-box id="control-sas-couloir" position="-1.75 1.5 -2.95" 
+                                class="clickable"  src="#spokeHand"
+                                width="0.3" height="0.4" depth="0.05" color="aqua"
+                                emissive="aqua" emissive-intensity="0.1" 
+                                sound=  "src: url(assets/sounds/sas.mp3); 
+                                         on: click; 
+                                         distanceModel: exponential; 
+                                         volume:1;
+                                         refDistance: 5;
+                                         rolloffFactor: 4" 
+                                open-sas-couloir>
+                        </a-box>
+
+                </a-entity>
+
+                <!---------------------CHAMBRE-------------------->
+                <a-entity id="secret-room" position="-13 0 0" rotation="0 90 0">
+
+                        <!---------------------MUR DE GAUCHE-------------------->
+                        <a-entity position="-3.45 1.25 -2" rotation="0 90 0">
+
+                                <a-box src="#plaster" width="9.8" height="2.5" depth="0.1" repeat="10 2.5" roughness="0.85" ></a-box>                                
+                                <!--------------------plainte mur gauche bas de la chambre-------------------->
+                                <a-box width="5" height="0.1" depth="0.05" src="#bois" repeat="5 1" position="-2.5 -1.2 0.05" roughness="0.85"></a-box>   
+                                <!--------------------POSTER DU SIGNE DU ZODIAQUE-------------------->
+                                <a-image src="#poissons" position="-3 0 0.055"
+                                width="2.76" height="1.6"></a-image>
+                        </a-entity>
+                        <!---------------------MUR DE DROITE-------------------->
+                        <a-entity position="3.45 1.25 -2" rotation="0 90 0">
+
+                                <a-box position="0 1 0" src="#plaster" width="9.8" height="0.5" depth="0.1" repeat="10 0.5" roughness="0.85" ></a-box>   
+                                <a-plane width="9.8" height="1" position="0 0.25 0" color="#9fb4ff" transparent="true" opacity="0.14" side="double"></a-plane>  
+                                <a-box position="0 -0.75 0" src="#plaster" width="9.8" height="1" depth="0.1" repeat="10 1" roughness="0.85" ></a-box>                                 
+                                <!--------------------plainte basse mur droit chambre-------------------->
+                                <a-box width="9.8" height="0.1" depth="0.05" src="#bois" repeat="10 1" position="0 -1.2 -0.05" roughness="0.85"></a-box>                          
+                                <!--------------------plainte basse haute fenetre-------------------->
+                                <a-box width="9.8" height="0.1" depth="0.05" src="#bois" repeat="10 1" position="0 -0.25 -0.05" roughness="0.85"></a-box>                             
+                                <!--------------------plainte basse basse fenetre-------------------->
+                                <a-box width="9.8" height="0.1" depth="0.05" src="#bois" repeat="10 1" position="0 0.75 -0.05" roughness="0.85"></a-box>         
+
+                        </a-entity>
+                        <!---------------------MUR DU FOND-------------------->
+                        <a-entity position="0 1.25 -6.95" rotation="0 0 0">
+                                <a-box src="#plaster" width="7" height="2.5" depth="0.1" repeat="7 2.5" roughness="0.85" ></a-box>
+                        </a-entity>
+                        <!---------------------PLAFOND-------------------->
+                        <a-entity position="0  2.55 -0.5" rotation="90 90 0">
+                                <a-box position="-1 0 0" 
+                                        width="5" height="7" depth="0.1" 
+                                        src="#plaster" repeat="5 7" roughness="0.85" ></a-box>
+                                <a-box position="3 1 0" 
+                                        width="3" height="5" depth="0.1" 
+                                        src="#plaster" repeat="2 5" roughness="0.85" ></a-box>
+                                <a-box position="5.5 1.75 0" 
+                                        width="2" height="3.5" depth="0.1" 
+                                        src="#plaster" repeat="2 5" roughness="0.85" ></a-box>
+                        </a-entity>
+                        <!---------------------SOL-------------------->
+                        <a-entity position="0  0 -0.445"  rotation="-90 90 0">
+                                <a-plane position="1.6 0 0" 
+                                        width="10" height="7" depth="0.1" 
+                                        src="#marbre-or" repeat="10 7" roughness="0.85" ></a-plane>
+
+                        </a-entity>
+                        <!---------------------MUR DE DEVANT AVEC OUVERTURE-------------------->
+                        <a-entity position="0 0 2.95">
+                                <a-box position="0 2.25 0" width="3" height="0.5" depth="0.1" src="#plaster" repeat="3 1" roughness="0.85" >
+                                </a-box>
+                                <a-box position="-2.5 1.25 0" width="2" height="2.5" depth="0.1" src="#plaster" repeat="2.5 2.5" roughness="0.85" >
+                                </a-box>
+                                <a-box position="2.5 1.25 0" width="2" height="2.5" depth="0.1" src="#plaster" repeat="2 2.5" roughness="0.85" >
+                                </a-box>
+                                <a-plane id="door-room" position="0 1 0.025" width="3" height="2" src="#plaster" repeat="3 2" roughness="0.85" >
+                                </a-plane>     
+                                <!--------------------plainte dessus porte -------------------->
+                                <a-box width="3.1" height="0.1" depth="0.05" src="#bois" repeat="3 1" position="0 1.95 -0.05" roughness="0.85"></a-box>
+                                <!--------------------plainte basse gauche mur d'entree-------------------->
+                                <a-box width="1.925" height="0.1" depth="0.05" src="#bois" repeat="2 1" position="-2.412 0.05 -0.05" roughness="0.85"></a-box>
+                                <!--------------------plainte cote porte gauche -------------------->
+                                <a-box width="0.1" height="1.8" depth="0.05" src="#bois" repeat="1 2" position="-1.5 1 -0.05" roughness="0.85"></a-box>
+                                <!--------------------plainte basse gauche mur d'entree-------------------->
+                                <a-box width="1.925" height="0.1" depth="0.05" src="#bois" repeat="2 1" position="2.412 0.05 -0.05" roughness="0.85"></a-box>
+                                <!--------------------plainte cote porte droite -------------------->
+                                <a-box width="0.1" height="1.8" depth="0.05" src="#bois" repeat="1 2" position="1.5 1 -0.05" roughness="0.85"></a-box>
+
+                        </a-entity>
+                        <!---------------------PIEDESTAL SABRE LASER--------------------------->
+                        
+                        <a-entity position="0.6 0.5 -3.5" rotation="0 90 0">    
+                                        <!--------------------TOP-------------------->
+                                        <a-cylinder src="#marbre" height="0.05" radius="0.2" 
+                                                    segments-radial="5"
+                                                    position="0 0.4 0" roughness="0.85">
+                                        </a-cylinder>
+                                        <!--------------------CORPS-------------------->
+                                        <a-cylinder src="#marbre" height="0.8" radius="0.15"  segments-radial="5"
+                                                    roughness="0.85">
+                                        </a-cylinder>
+                                        <!--------------------BOTTOM-------------------->
+                                        <a-cylinder src="#marbre" height="0.05" radius="0.18" 
+                                                    segments-radial="5"
+                                                    position="0 -0.4 0" roughness="0.85">
+                                        </a-cylinder>
+                                        <!-----------------------------SABRE LASER------------------------------>
+                                        <a-entity id="sabre" geometry="primitive:sphere; radius:0.02" 
+                                        material="visible: false"
+                                        position="0 0.65 0">
+                                        <!--------------------button-------------------->
+                                        <a-box  id="button-saber" color="lime" width="0.02" height="0.02" depth="0.01" position="0 -0.03 0.015"
+                                                rotation="0 0 90" class="clickable" roughness="0.85" open-saber></a-box>
+                                        <!--------------------laser-------------------->
+                                        <a-cylinder id="laserOfSaber" color="green" height="0" radius="0.01" position="0 0 0" emissive="lime"
+                                                emissiveintensity="10"></a-cylinder>
+                                        <!--------------------top of the body-------------------->
+                                        <a-cylinder color="grey" height="0.15" radius="0.015" emissiveintensity="0.5"
+                                                roughness="0.85"></a-cylinder>
+                                        <!--------------------middle part-------------------->
+                                        <a-cylinder color="black" height="0.04" radius="0.01" position="0 -0.09 0" roughness="0.85"></a-cylinder>
+                                        <!--------------------bottom-------------------->
+                                        <a-cylinder color="grey" height="0.04" radius="0.015" position="0 -0.12 0" roughness="0.85"></a-cylinder>
+                                        <!--------------------rings for decorations-------------------->
+                                        <a-torus color="black" radius="0.016" radius-tubular="0.002" rotation="90 0 0"
+                                                position="0 0.05 0" roughness="0.85"></a-torus>
+                                        <a-torus color="black" radius="0.016" radius-tubular="0.002" rotation="90 0 0"
+                                                position="0 0.04 0" roughness="0.85"></a-torus>
+                                        <a-torus color="black" radius="0.016" radius-tubular="0.002" rotation="90 0 0"
+                                                position="0 0.03 0" roughness="0.85"></a-torus>
+                                        <a-torus color="black" radius="0.016" radius-tubular="0.002" rotation="90 0 0"
+                                                position="0 0.02 0" roughness="0.85"></a-torus>
+                                        </a-entity>
+                        </a-entity>
+                        <!---------------------LIT-------------------->
+                        <a-entity position="-2.25 0.05 1" rotation="0 90 0">
+                                <!--------------------pied du lit-------------------->
+                                <a-entity position="0 0.08 0">
+                                        <a-box position="-0.8 0 -1.05" width="0.06" height="0.3" depth="0.06" src="#acier" metalness="0.45" roughness="0.4"></a-box>
+                                        <a-box position="0.8 0 -1.05" width="0.06" height="0.3" depth="0.06" src="#acier" metalness="0.45" roughness="0.4"></a-box>
+                                        <a-box position="-0.8 0 1.05" width="0.06" height="0.3" depth="0.06" src="#acier" metalness="0.45" roughness="0.4"></a-box>
+                                        <a-box position="0.8 0 1.05" width="0.06" height="0.3" depth="0.06" src="#acier" metalness="0.45" roughness="0.4"></a-box>
+                                </a-entity>
+                                <!--------------------sommier-------------------->
+                                <a-box position="0 0.2 0" rotation="90 0 0" width="1.6" height="2.1" depth="0.05"
+                                        src="#acier" metalness="0.45" roughness="0.4"></a-box>
+                                <!--------------------matelas-------------------->
+                                <a-box position="0 0.3 0" rotation="90 0 0" width="1.4" height="2" depth="0.2" repeat="1 2"
+                                        src="#matelas" roughness="0.85"></a-box>
+                                <!--------------------couverture-------------------->
+                                <a-box position="0 0.3 0.21" rotation="90 0 0" width="1.42" height="1.6" depth="0.22"
+                                src="#tissu" roughness="0.85"></a-box>
+                                <!--------------------coussin gauche-------------------->
+                                <a-box position="-0.35 0.44 -0.7" rotation="90 0 0" width="0.6" height="0.4" depth="0.05"
+                                src="#tissu"></a-box>
+                                <!--------------------cousiin droit-------------------->
+                                <a-box position="0.35 0.44 -0.7" rotation="90 0 0" width="0.6" height="0.4" depth="0.05"
+                                src="#tissu"></a-box>
+                        </a-entity>         
+                        <!---------------------TV ROOM--------------------->
+                        <a-entity position="3.2 1.5 0.9" rotation="0 90 0">
+                                <a-box width="2.6" height="1.8" depth="0.05" color="#05060f" metalness="0.6" roughness="0.25">
+                                        <a-box width="2.68" height="1.88" depth="0.01" position="0 0 0.03" color="#7C3AED" emissive="#7C3AED" emissive-intensity="1.6"></a-box>
+                                        <a-entity id="tv" position="0 0.1 -0.026" rotation="0 180 0">
+                                                <a-video id="pub2" src="#video2" width="2.56" height="1.48"></a-video>
+                                                <a-image id="idle2" src="#tvidle2" width="2.56" height="1.48" position="0 0 0.004"></a-image>
+                                                <a-box id="buttonTvRoom" class="clickable" width="0.1" height="0.06" depth="0.05"
+                                                        position="0 -0.86 0"
+                                                        emissive="aqua" emissive-intensity="1" play-room>
+                                                </a-box>
+                                        </a-entity>                                
+                                </a-box>
+                        </a-entity>
+                        <!---------------------CONTROL DU SAS WC----------------------->                        
+                        <a-box id="sas-wc" position="-3 1.5 -1.95" rotation="0 0 0"
+                               class="clickable"  src="#sasWc" color="aqua"
+                               width="0.3" height="0.4" depth="0.05"
+                               emissive="aqua" emissive-intensity="0.1" 
+                               sound=  "src: url(assets/sounds/wc.mp3); 
+                                        on: click; 
+                                        distanceModel: exponential; 
+                                        volume:1;
+                                        refDistance: 3;
+                                        rolloffFactor: 4" 
+                                open-sas>
+                        </a-box>
+                        <!---------------------ESCALIER-------------------->
+                        <a-entity position="-0.25 0 -6" rotation="0 90 0">
+                                <!--------------------premiere marche-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="0 0.125 0" rotation=""
+                                        width="1.9" height="0.25" depth="0.5"></a-box>
+                                <!--------------------deuxieme marche-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="0 0.25 -0.5" rotation=""
+                                        width="1.9" height="0.5" depth="0.5"></a-box>
+                                <!--------------------troisieme marche-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="0 0.375 -1" rotation=""
+                                        width="1.9" height="0.75" depth="0.5"></a-box>
+                                <!--------------------palier-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="0 0.5 -2.25" rotation=""
+                                        width="2" height="1" depth="2"></a-box>
+                                <!--------------------quatrieme marche-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="-1.25 0.625 -2.25" rotation="0 90 0"
+                                        width="1.9" height="1.25" depth="0.5"></a-box>
+                                <!--------------------cinquieme marche marche-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="-1.75 0.75 -2.25" rotation="0 90 0"
+                                        width="1.9" height="1.5" depth="0.5"></a-box>
+                                <!--------------------sixieme marche-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="-2.25 0.875 -2.25" rotation="0 90 0"
+                                        width="1.9" height="1.75" depth="0.5"></a-box>
+                                <!--------------------septieme marche-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="-2.75 1 -2.25" rotation="0 90 0"
+                                        width="1.9" height="2" depth="0.5"></a-box>
+                                <!--------------------huitieme marche-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="-3.25 1.125 -2.25" rotation="0 90 0"
+                                        width="1.9" height="2.25" depth="0.5"></a-box>
+                                <!--------------------neuvieme marche-------------------->
+                                <a-box src="#acier" metalness="0.45" roughness="0.4" position="-3.75 1.25 -2.25" rotation="0 90 0"
+                                        width="1.9" height="2.5" depth="0.5"></a-box>
+                                <!--------------------paroi interne des wc-------------------->
+                                <a-box src="#plaster" position="-2.5 1.25 -1.25"
+                                        width="3" height="2.5" depth="0.1"
+                                        repeat="3 2.5" roughness="0.85">
+                                </a-box>
+                                
+                                <!--------------------murs des toilettes-------------------->
+                                <a-box src="#plaster" position="-2.5 1.25 0"
+                                        width="3" height="2.5" depth="0.1"
+                                        repeat="3 2.5" roughness="0.85">
+                                        <!--------------------poster 10 commandements-------------------->
+                                        <a-image src="#commandements" side="double" width="1.2" height="1.6" position="0.8 0 0.06">
+                                        </a-image>
+                                        <!--------------------poster full metal alchemist-------------------->
+                                        <a-image src="#fullmetal" side="double" width="1.2" height="1.6" position="-0.8 0 0.06">
+                                        </a-image>
+                                </a-box>
+
+                                <!--------------------mur de la montée d'escalier-------------------->
+                                <a-box src="#plaster" position="-1 1.25 -0.5" rotation="0 90 0"
+                                        width="1.5" height="2.5" depth="0.1"
+                                        repeat="1.5 2.5" roughness="0.85"></a-box>
+                                <!--------------------mur porte des toilettes-------------------->
+                                <a-box src="#plaster" position="-4 1.25 -1.6" rotation="0 90 0"
+                                        width="3.3" height="2.5" depth="0.1"
+                                        repeat="3 2.5" roughness="0.85">
+                                        <!--------------------plainte bas droite-------------------->                                        
+                                        <a-box width="1.1" height="0.1" depth="0.05" src="#bois" repeat="1 2"
+                                        position="-1.1 -1.2 -0.05" roughness="0.85"></a-box>
+                                        <!--------------------plainte bas gauche-------------------->                                        
+                                        <a-box width="1.1" height="0.1" depth="0.05" src="#bois" repeat="1 2"
+                                        position="1.1 -1.2 -0.05" roughness="0.85"></a-box>
+                                        <!--------------------plainte gauche-------------------->                                        
+                                        <a-box width="0.1" height="1.95" depth="0.05" src="#bois" repeat="1 2"
+                                        position="0.6 -0.175 -0.05" roughness="0.85"></a-box>
+                                        <!--------------------plainte droite-------------------->                                        
+                                        <a-box width="0.1" height="1.95" depth="0.05" src="#bois" repeat="1 2"
+                                        position="-0.6 -0.175 -0.05" roughness="0.85"></a-box>
+                                        <!--------------------plainte haut-------------------->                                        
+                                        <a-box width="1.1" height="0.1" depth="0.05" src="#bois"
+                                        position="0 0.75 -0.05" roughness="0.85"></a-box>
+                                </a-box>
+                                
+                                
+
+
+                        </a-entity> 
+                </a-entity>
+
+                <!---------------------TERASSE-------------------->
+                <a-entity id="terasse" position="-13 1.85 0" rotation="0 90 0">
+                        <!--------------------mur de gauche-------------------->
+                                <a-box position="-3.45 1.2 -2" rotation="0 90 0"
+                                        color="#9fb4ff" opacity="0.14" roughness="0.1" width="9.8" 
+                                        height="1.1" depth="0.1" roughness="0.85"></a-box>
+                        <!--------------------mur de droite-------------------->
+                                <a-box position="3.45 1.25 -2" rotation="0 90 0"
+                                        color="#9fb4ff" opacity="0.14" roughness="0.1" width="9.8" 
+                                        height="1" depth="0.1" roughness="0.85"></a-box>
+                        <!--------------------mur du fond-------------------->
+                                <a-box position="0 1.2 -6.95"
+                                        color="#9fb4ff" opacity="0.14" roughness="0.1" width="7" 
+                                        height="1.1" depth="0.1" roughness="0.85"></a-box>
+                        <!--------------------mur de devant-------------------->
+                                <a-box position="0 1.25 2.95"
+                                        color="#9fb4ff" opacity="0.14" roughness="0.1" width="7" 
+                                        height="1" depth="0.1" roughness="0.85"></a-box>
+                        <!--------------------rambarde escalier-------------------->
+                                <a-box position="-1.45 1.25 -3.5" rotation="0 90 0"
+                                color="#9fb4ff" opacity="0.14" roughness="0.1" width="3" 
+                                height="1" depth="0.1" roughness="0.85"></a-box>
+                        <!--------------------rambarde escalier-------------------->
+                                <a-box position="0.05 1.25 -5.9" rotation="0 90 0"
+                                color="#9fb4ff" opacity="0.14" roughness="0.1" width="2" 
+                                height="1" depth="0.1" roughness="0.85"></a-box>
+                        <!--------------------rambarde escalier-------------------->
+                                <a-box position="-0.7 1.25 -4.95"
+                                color="#9fb4ff" opacity="0.14" roughness="0.1" width="1.4" 
+                                height="1" depth="0.1" roughness="0.85"></a-box>
+
+                        <!--------------------piedestal starwars-------------------->
+                        <a-entity position="2.1 1.3 -1.8" rotation="0 -90 0">
+                                <!--------------------TOP-------------------->
+                                <a-cylinder src="#marbre" height="0.05" radius="0.2" 
+                                        segments-radial="5"
+                                        position="0 0.4 0" roughness="0.85">
+                                </a-cylinder>
+                                <!--------------------CORPS-------------------->
+                                <a-cylinder src="#marbre" height="0.8" radius="0.15" 
+                                        segments-radial="5" roughness="0.85">
+                                </a-cylinder>
+                                <!--------------------BOTTOM-------------------->
+                                <a-cylinder src="#marbre" height="0.05" radius="0.18" 
+                                        segments-radial="5" position="0 -0.4 0" roughness="0.85">
+                                </a-cylinder>
+                                <!--------------------BOUTON-------------------->
+                                <a-box id="button-starwars"  class="clickable" 
+                                        width="0.2" height="0.05" depth="0.2" src="#vador"
+                                        position="0 0.45 0"  roughness="0.85"
+                                        starwars>
+                                </a-box>
+
+                        </a-entity>
+                        <!---------------------CANAPE----------------------->
+                        <a-entity position="0 0.7 2.1" rotation="0 90 0">
+                                <!--------------------bras gauche-------------------->
+                                <a-box position="0 0.3 -1" rotation=""
+                                        src="#acier" metalness="0.45" roughness="0.4" width="1" height="0.6" depth="0.05"></a-box>
+                                <!--------------------bras droit-------------------->
+                                <a-box position="0 0.3 1" rotation=""
+                                        src="#acier" metalness="0.45" roughness="0.4" width="1" height="0.6" depth="0.05"></a-box>
+                                <!--------------------plateau-------------------->
+                                <a-box position="0 0.3 0" rotation="0 90 0"
+                                        src="#acier" metalness="0.45" roughness="0.4" width="1.95" height="0.05" depth="0.7"></a-box>
+                                <!--------------------dossier-------------------->
+                                <a-box position="-0.4 0.6 0" rotation="70 90 0"
+                                        src="#acier" metalness="0.45" roughness="0.4" width="1.95" height="0.05" depth="0.7"></a-box>
+                                        
+                                <!--------------------coussin plateau gauche-------------------->
+                                <a-box position="0.1 0.4 0.475" rotation="0 90 0"
+                                src="#tissu" width="0.92" height="0.15" depth="0.7"></a-box>
+                                <!--------------------coussin plateau droit-------------------->
+                                <a-box position="0.1 0.4 -0.475" rotation="0 90 0"
+                                src="#tissu" width="0.92" height="0.15" depth="0.7"></a-box>
+                                
+                                <!--------------------coussin dossier gauche-------------------->
+                                <a-box position="-0.3 0.7 0.475" rotation="70 90 0"
+                                src="#tissu" width="0.92" height="0.15" depth="0.7">
+                                </a-box>
+                                <!--------------------coussin dossier droit-------------------->
+                                <a-box position="-0.3 0.7 -0.475" rotation="70 90 0"
+                                src="#tissu" width="0.92" height="0.15" depth="0.7"></a-box>
+                        </a-entity>
+
+                </a-entity>
+
+                <!---------------------STARWARS-------------------->
+                <a-entity id="ship-trajectory" position="-15 9 -200">
+
+                        <!--------------------vasisseau attaquant-------------------->
+                        <a-entity position="0 0 -50" rotation="0 0 0" class="ship" sound="src:#moteur; loop:true; volume:5; rolloffFactor:30; refDistance:2">
+                                <!--------------------cockpit-------------------->
+                                <a-sphere color="darkred" radius="0.7"></a-sphere>
+                                <!--------------------bras gauche-------------------->
+                                <a-cylinder position="-1 0 0" rotation="0 0 90"
+                                    height="1" radius="0.2" 
+                                    color="black" segments-radial="6">
+                                </a-cylinder>
+                                <!--------------------bras droit-------------------->
+                                <a-cylinder position="1 0 0" rotation="0 0 90"
+                                    height="1" radius="0.2" color="black" segments-radial="6">
+                                </a-cylinder>
+                                <!--------------------aile gauche-------------------->
+                                <a-cylinder position="-1.5 0 0" rotation="0 0 90" 
+                                    height="0.1" radius="1.5" color="darkred" segments-radial="6">
+                                    <!--------------------decoration-------------------->
+                                    <a-entity position="0 0.075 0">
+                                        <a-triangle
+                                            position="0.72 0 0" rotation="-90 90 0"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="0.4 0 -0.6" rotation="-90 90 60"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.4 0 -0.6" rotation="-90 90 120"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.4 0 0.6" rotation="-90 90 -120"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="0.4 0 0.6" rotation="-90 90 -60"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.72 0 0" rotation="-90 90 180"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                    </a-entity>
+                                </a-cylinder>
+                                <!--------------------aile droite-------------------->
+                                <a-cylinder position="1.5 0 0" rotation="0 0 90" 
+                                    height="0.1" radius="1.5" color="darkred" segments-radial="6">
+                                    <!--------------------decoration-------------------->
+                                    <a-entity position="0 -0.075 0" rotation="0 0 -180">
+                                        <a-triangle
+                                            position="0.72 0 0" rotation="-90 90 0"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="0.4 0 -0.6" rotation="-90 90 60"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.4 0 -0.6" rotation="-90 90 120"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.4 0 0.6" rotation="-90 90 -120"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="0.4 0 0.6" rotation="-90 90 -60"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.72 0 0" rotation="-90 90 180"
+                                            color="lime" side="double">
+                                        </a-triangle>
+                                    </a-entity>
+                                </a-cylinder>
+                                <a-entity>
+                                    <!--------------------arme-------------------->
+                                    <a-cylinder position="0 -0.2 0.8" rotation="90 0 0"
+                                        height="0.4" radius="0.04"
+                                        color="red" id="gunShipOne" sound="src:#laser; volume:5; rolloffFactor:10; refDistance:2; poolSize:15;">
+                                    </a-cylinder>
+                                </a-entity>
+                        </a-entity>
+                
+                        <!--------------------vasisseau attaqué-------------------->
+                        <a-entity position="0 0 -30" rotation="0 0 0" class="ship" id='ship-victime' sound="src:#moteur; loop:true; volume:5; rolloffFactor:30; refDistance:2">    
+                                <!--------------------cockpit-------------------->
+                                <a-sphere color="black" radius="0.7"></a-sphere>
+                                <!--------------------bras gauche-------------------->
+                                <a-cylinder position="-1 0 0" rotation="0 0 90"
+                                    height="1" radius="0.2" 
+                                    color="black" segments-radial="6">
+                                </a-cylinder>
+                                <!--------------------bras droit-------------------->
+                                <a-cylinder position="1 0 0" rotation="0 0 90"
+                                    height="1" radius="0.2" color="black" segments-radial="6">
+                                </a-cylinder>
+                                <!--------------------aile gauche-------------------->
+                                <a-cylinder position="-1.5 0 0" rotation="0 0 90" 
+                                    height="0.1" radius="1.5" color="black" segments-radial="6">
+                                    <!--------------------decoration-------------------->
+                                    <a-entity position="0 0.075 0">
+                                        <a-triangle
+                                            position="0.72 0 0" rotation="-90 90 0"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="0.4 0 -0.6" rotation="-90 90 60"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.4 0 -0.6" rotation="-90 90 120"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.4 0 0.6" rotation="-90 90 -120"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="0.4 0 0.6" rotation="-90 90 -60"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.72 0 0" rotation="-90 90 180"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                    </a-entity>
+                                </a-cylinder>
+                                <!--------------------aile droite-------------------->
+                                <a-cylinder position="1.5 0 0" rotation="0 0 90" 
+                                    height="0.1" radius="1.5" color="black" segments-radial="6">
+                                    <!--------------------decoration-------------------->
+                                    <a-entity position="0 -0.075 0" rotation="0 0 -180">
+                                        <a-triangle
+                                            position="0.72 0 0" rotation="-90 90 0"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="0.4 0 -0.6" rotation="-90 90 60"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.4 0 -0.6" rotation="-90 90 120"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.4 0 0.6" rotation="-90 90 -120"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="0.4 0 0.6" rotation="-90 90 -60"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                        <a-triangle
+                                            position="-0.72 0 0" rotation="-90 90 180"
+                                            color="aqua" side="double">
+                                        </a-triangle>
+                                    </a-entity>
+                                </a-cylinder>
+                                <!--------------------lasers-------------------->
+                                <a-entity>
+                                        <!--------------------arme-------------------->
+                                        <a-cylinder position="0 -0.2 0.8" rotation="90 0 0"
+                                            height="0.4" radius="0.04"
+                                            color="red" id="gun">
+                                        </a-cylinder>
+                                </a-entity>
+                        </a-entity>
+
+                </a-entity>
+
+                <!---------------------REPERES DE TELEPORTATION-------------------->
+
+                        <!---------------------REPERE TELEPORTATION BUREAU----------------------->
+                        <a-image src="#footsteps" position="0 0.01 -2.2" rotation="-90 0 0"
+                                class="teleport" color="aqua"
+                                opacity="0.5" scale="0.5 0.5 0.5" sound="#teleport" tel>
+                        </a-image>
+                        <!---------------------REPERE TELEPORTATION SAS----------------------->
+                        <a-image src="#footsteps" position="-3 0.01 0" rotation="-90 90 0" 
+                                class="teleport" color="aqua"
+                                opacity="0.5" scale="0.5 0.5 0.5" tel>
+                        </a-image>
+                        <!---------------------REPERE TELEPORTATION TV----------------------->
+                        <a-image src="#footsteps" position="-2.8 0.01 -3" rotation="90 0 90" 
+                                class="teleport" color="aqua"
+                                opacity="0.5" scale="0.5 0.5 0.5" tel>
+                        </a-image>
+                        <!---------------------REPERE ETAGERE GAUCHE----------------------->
+                        <a-image src="#footsteps" position="2.5 0.01 -2.9" rotation="90 0 90" 
+                                class="teleport" color="aqua"
+                                opacity="0.5" scale="0.5 0.5 0.5" tel>
+                        </a-image>
+                        <!---------------------REPERE ETAGERE DROITE----------------------->
+                        <a-image src="#footsteps" position="2.5 0.01 2.9" rotation="90 0 0"
+                                class="teleport" color="aqua"
+                                opacity="0.5" scale="0.5 0.5 0.5" tel>
+                        </a-image>  
+                        <!---------------------REPERE ETAGERE SAS----------------------->
+                        <a-image src="#footsteps" position="-2.6 0.01 2.9" rotation="-90 0 90" 
+                                class="teleport" color="aqua"
+                                rotation="-90 0 90" opacity="0.5" scale="0.5 0.5 0.5" tel>
+                        </a-image> 
+                        <!---------------------REPERE TELEPORTATION COULOIR----------------------->
+                        <a-image src="#footsteps" position="-7 0.01 0" rotation="-90 0 0" 
+                                class="teleport" color="aqua"
+                                opacity="0.5" scale="0.5 0.5 0.5" tel>
+                        </a-image>      
+                        <!---------------------TELEPORTATION SABRE LASER-------------------->
+                        <a-image src="#footsteps" position="-16.5 0.01 -1.5" rotation="90 0 0" 
+                                class="teleport" opacity="0.5" color="aqua"
+                                scale="0.5 0.5 0.5" tel>
+                        </a-image>
+                        <!---------------------TELEPORTATION DEBUT ESCALIER-------------------->
+                        <a-image src="#footsteps" position="-19 0.01 -1.5" rotation="90 0 0"
+                                class="teleport" opacity="0.5" color="aqua"
+                                scale="0.5 0.5 0.5" tel>
+                        </a-image>         
+                        <!---------------------TELEPORTATION LIT-------------------->
+                        <a-image src="#footsteps" position="-12 0.01 -1" rotation="-90 0 0"
+                                class="teleport" opacity="0.5" color="aqua"
+                                scale="0.5 0.5 0.5" tel>
+                        </a-image>   
+                        <!---------------------TELEPORTATION PALIER VERTICAL-------------------->
+                        <a-image src="#footsteps" position="-19 1.4 2.5"
+                                        class="teleport" opacity="0.5" color="aqua"
+                                        scale="0.5 0.5 0.5" tel>
+                        </a-image>
+                        <!---------------------TELEPORTATION PALIER HORIZONTAL-------------------->
+                        <a-image src="#footsteps" position="-19 1.01 2.5" rotation="90 0 0"
+                                        class="teleport" opacity="0.5" color="aqua"
+                                        scale="0.5 0.5 0.5" tel>
+                        </a-image>
+                        <!---------------------TELEPORTATION HAUT DES ESCALIERS VERTICAL-------------------->
+                        <a-image src="#footsteps" position="-15 3 2.5" rotation="0 90 0"
+                                        class="teleport" opacity="0.5" color="aqua"
+                                        scale="0.5 0.5 0.5" tel>
+                        </a-image> 
+                        <!--------------------TELEPORTATION CANAPE-------------------->
+                        <a-image src="#footsteps" position="-12 2.61 0" rotation="-90 0 0"
+                                class="teleport"  opacity="0.5" color="aqua"
+                                scale="0.5 0.5 0.5" tel>
+                        </a-image>
+                        <!--------------------TELEPORTATION STARWARS-------------------->
+                        <a-image src="#footsteps" position="-14.8 2.61 -1" rotation="-90 0 0"
+                                class="teleport" opacity="0.5" color="aqua"
+                                scale="0.5 0.5 0.5" tel>
+                        </a-image>  
+
+                <!---------------------UN PEU DE MUSIQUE D'AMBIANCE--------------------->
+                <a-sound src="#ambiant" volume="0.03" sound="autoplay: true; rollofFactor:1; refDistance:20"></a-sound>
+
+                <!-------------------- parcelles à vendre-------------------->
+                <a-entity position="-10 0 30" rotation="0 90 0">
+                        <a-box width="20" height="0.5" depth="30"
+                                color="aqua" transparent="true" opacity="0.3"></a-box>                        
+                        <a-entity>
+                                <!--------------------mat du panneau publicitaire-------------------->
+                                <a-box position="0 5 0" width="0.5" height="10" depth="0.5"></a-box>
+                                <!--------------------panneau publicitaire-------------------->
+                                <a-box position="0 14 0" rotation="0 90 0"
+                                width="20" height="10" depth="0.5">
+                                        <a-image src="#pubRenaskia" position="0 0 0.28"
+                                                width="19.5" height="9.5"></a-image>
+                                </a-box>
+                        </a-entity>
+                </a-entity>
+
+                </a-scene>
+
+        <!-------------------- <script src="js/ship-functions.js"></script> -------------------->
+        <script src="js/quality.js"></script>
+        <script src="js/perpignan.js"></script>
+        <script src="js/futur.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/tv-functions.js"></script>
+        <script src="js/pad-functions.js"></script>
+        <script src="js/sas-functions.js"></script>
+        <script src="js/desk-functions.js"></script>
+        <script src="js/forbiden.js"></script>
+        <script src="js/time.js"></script>
+        <script src="js/saber.js"></script>
+        <script src="js/earth-rotation.js"></script>
+        <script src="js/teleportation.js"></script>
+        <script src="js/starwars.js"></script>
+
+</body>
+
+</html>
