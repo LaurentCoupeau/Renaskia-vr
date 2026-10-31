@@ -86,3 +86,32 @@ for (let i=0; i<pads.length; i++) {
         }
     })
 }
+
+/* ---------- Fermer la fiche : clic sur la fiche ou sur la croix rouge ---------- */
+let closeBtn = document.createElement('a-plane');
+closeBtn.setAttribute('width', 0.24);
+closeBtn.setAttribute('height', 0.24);
+closeBtn.setAttribute('color', '#E63946');
+closeBtn.setAttribute('position', { x: 1.28, y: 0.74, z: 0.02 });
+closeBtn.setAttribute('visible', false);
+closeBtn.innerHTML = '<a-text value="X" align="center" color="#ffffff" width="2.4" position="0 0 0.01"></a-text>';
+screenPad.append(closeBtn);
+
+function hideScreenPad() {
+    screenPad.setAttribute('material', 'visible', 'false');
+    screenPad.setAttribute('opacity', 0);
+    screenPad.classList.remove('clickable');
+    closeBtn.classList.remove('clickable');
+    closeBtn.setAttribute('visible', false);
+    stateVisibility = false;
+}
+function showCloseControls() {
+    screenPad.classList.add('clickable');
+    closeBtn.classList.add('clickable');
+    closeBtn.setAttribute('visible', true);
+}
+screenPad.addEventListener('click', hideScreenPad);
+closeBtn.addEventListener('click', function (e) { e.stopPropagation(); hideScreenPad(); });
+for (let k = 0; k < pads.length; k++) {
+    pads[k].addEventListener('click', showCloseControls);
+}

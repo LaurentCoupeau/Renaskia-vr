@@ -16,7 +16,6 @@ AFRAME.registerComponent('futur', {
       var s = document.getElementById('ciel'); if (s) s.setAttribute('src', '#ciel-futur');
       scene.setAttribute('fog', 'type: exponential; color: #1a1030; density: 0.00005');
       // Image IA photoréaliste en toile de fond incurvée, face à la fenêtre (-Z)
-      mk('a-curvedimage', { src: '#vue-ia', radius: 80, height: 94, 'theta-start': 120, 'theta-length': 120, position: '0 -12 0', material: 'shader: flat; src: #vue-ia; side: back' });
       return;
     }
     root.setAttribute('position', '0 -60 0');   // on est en haut d'une tour : la ville s'étend en contrebas
