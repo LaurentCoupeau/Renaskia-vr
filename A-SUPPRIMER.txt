@@ -1,0 +1,37 @@
+./assets/img/sky9.png
+./assets/img/logo-glorydev.png
+./assets/img/screenshot.png
+./assets/img/visuels/droneserpro/logo.png
+./assets/img/visuels/droneserpro/1.jpg
+./assets/img/visuels/droneserpro/2.jpg
+./assets/img/visuels/droneserpro/3.jpg
+./assets/img/visuels/droneserpro/4.jpg
+./assets/img/visuels/dm66/logo.png
+./assets/img/visuels/dm66/1.jpg
+./assets/img/visuels/dm66/2.jpg
+./assets/img/visuels/dm66/3.jpg
+./assets/img/visuels/dr_belter/logo.png
+./assets/img/visuels/dr_belter/1.jpg
+./assets/img/visuels/dr_belter/2.jpg
+./assets/img/visuels/dr_belter/3.jpg
+./assets/img/visuels/ekleipsi/pub-ekleipsi.png
+./assets/img/visuels/art_tech_services/logo.png
+./assets/img/visuels/art_tech_services/1.jpg
+./assets/img/visuels/art_tech_services/2.jpg
+./assets/img/visuels/art_tech_services/3.jpg
+./assets/img/visuels/art_tech_services/4.jpg
+./assets/img/visuels/glorydev/179235792_301020464766669_9069185761040265466_n-1024x576.jpg
+./assets/img/visuels/glorydev/titre.png
+./assets/img/visuels/glorydev/afterwork.jpg
+./assets/img/visuels/glorydev/groupe.jpg
+./assets/img/visuels/glorydev/face.jpg
+./assets/img/visuels/glorydev/superman.png
+./assets/img/visuels/glorydev/teknik.jpg
+./assets/video/pub glorydev v2.mp4
+./assets/video/glorydev droner.mp4
+./assets/textures/plancher-bois-clair.jpg
+./assets/textures/lune.jpg
+./assets/textures/inox.jpg
+./assets/textures/wood.jpg
+./assets/textures/crepi.jpg
+./assets/textures/tissu.jpg
